@@ -1,0 +1,6 @@
+# phpstorm
+.idea/
+#node
+node_modules/
+#package-lock
+package-lock.json

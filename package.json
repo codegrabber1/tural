@@ -1,0 +1,20 @@
+{
+  "name": "tural",
+  "version": "1.0.0",
+  "description": "Travel agency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "travel",
+    "tural"
+  ],
+  "author": "codegrabber",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-sass": "^3.1.0",
+    "multipipe": "^2.0.1"
+  }
+}
