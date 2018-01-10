@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["index.pug"],"sourcesContent":["extends layout/main\nblock title\n   | Головна сторінка\nblock content\n     .col-md-6\n        p hello text\n     .col-md-6\n        p hello text!\n\n"],"file":"index.html"}

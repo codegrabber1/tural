@@ -1,0 +1,1 @@
+{"version":3,"sources":["settings.sass"],"names":[],"mappings":"AAAA,MAAM,CAAC;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,aAAa,GAAI","file":"style.css","sourcesContent":[".wrrap {\n  width: 100%;\n  border: 1px solid red; }\n"]}

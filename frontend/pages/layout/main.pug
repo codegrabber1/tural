@@ -1,7 +1,20 @@
 doctype html
 html(lang="us")
     head
+        link(href="assets/libs/bootstrap.min.css" rel="stylesheet")
         link(href="style.css" rel="stylesheet")
-        title Hello
+        title
+            block title
     body
-        p hello text
+        .wrrap
+            block header
+                .container
+                    .row
+                        p header
+            block content
+                .container
+                    .row
+        footer
+            p footer
+        script(src="libs/jquery/jquery-3.2.1.min.js")
+        script(src="js/custom.js")
