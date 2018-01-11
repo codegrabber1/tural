@@ -1,0 +1,33 @@
+-var menuItem = ["Главная", "Подбор туров", "Агенствам", "Не нашли, что искали", "Контакти"]
+-var menuSubItem = ["Item1", "Item2", "Item3"]
+-var menuSubItem2 = ["Item1", "Item2", "Item3"]
+mixin menu(items)
+    ul.sf-menu
+        each item in menuItem
+            if item == menuItem[1]
+                li
+                    a(href=item+".html") #{item}
+                    ul
+                        each item in menuSubItem
+                            li: a(href="#") #{item}
+            else if item == menuItem[2]
+                li
+                    a(href=item+".html") #{item}
+                    ul
+                        each item in menuSubItem
+                            li: a(href="#") #{item}
+            else
+                li: a(href=item+".html") #{item}
+
+mixin top_menu()
+    ul
+        li
+            a(href="#") Главная
+        li
+            a(href="#") Подбор туров
+        li
+            a(href="#") Агенствам
+        li
+            a(href="#") Не нашли, что искали
+        li
+            a(href="#") Контакти

@@ -1,20 +1,28 @@
 doctype html
-html(lang="us")
+html(lang="ru-RU")
     head
-        link(href="assets/libs/bootstrap.min.css" rel="stylesheet")
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=devise-width, initial-scale=1")
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+        link(href="libs/bootstrap.min.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
         link(href="style.css" rel="stylesheet")
+        <!-- [if lt IE 9]>
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js")
+        <![endif]-->
         title
             block title
     body
         .wrrap
-            block header
+            header
+                include ../modules/_header
+            .content
                 .container
                     .row
-                        p header
-            block content
-                .container
-                    .row
+                        block content
         footer
-            p footer
+            include ../modules/_footer
         script(src="libs/jquery/jquery-3.2.1.min.js")
         script(src="js/custom.js")
