@@ -19,15 +19,23 @@ mixin menu(items)
             else
                 li: a(href=item+".html") #{item}
 
-mixin top_menu()
+mixin top_tel()
+    ul.top-tel
+        li
+           | (050) 486-42-14
+        li
+           | (067) 741-74-11
+
+mixin copylist()
     ul
         li
-            a(href="#") Главная
+           | &copy; 2017 &nbsp;
+           a(href="") tural.com.ua
         li
-            a(href="#") Подбор туров
-        li
-            a(href="#") Агенствам
-        li
-            a(href="#") Не нашли, что искали
-        li
-            a(href="#") Контакти
+           | All rights reserved
+mixin footericon()
+    ul
+       li
+          a(href="#") fa
+              //i()
+mixin

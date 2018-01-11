@@ -1,19 +1,29 @@
 include _mixins
-.container
-    .row
-        .top-header.clearfix
-            .col-md-4
-                p tel
-            .col-md-4
-                p logo
-            .col-md-4
-                p enter
-        .top-menu
-           +menu()
-
-        .choosevocation
-            form
-                .col-md-4
-                    input(type="text" name="name")
-                .col-md-4
-                    input(type="text" name="name")
+.top-slider
+    .container
+        .row
+            .top-header.clearfix
+                .col-xs-12.col-sm-6.col-md-4
+                    +top_tel()
+                    .call-form.clearfix
+                        img(src="images/viber_white.png")
+                        a(href="#") Обратний звонок
+                .col-xs-12.col-sm-6.col-md-5
+                    .top-kurs
+                        p Курс валют: 22.11.17$ = 27.02 грн € = 31.66 грн  Р = 0.46 грн
+                    .top-logo
+                        a(href="index.html")
+                            img(src="images/top-logo.png" alt="Tural")
+                .col-xs-12.col-sm-6.col-md-3
+                    .top-enter.clearfix
+                        p Вход в личный кабинет
+                        a(href="#")
+                            img(src="images/enter-icon.png")
+            .top-menu
+               +menu()
+            .choosevocation
+                form
+                    .col-md-4
+                        input(type="text" name="name")
+                    .col-md-4
+                        input(type="text" name="name")
