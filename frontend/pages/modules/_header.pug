@@ -1,0 +1,19 @@
+include _mixins
+.container
+    .row
+        .top-header.clearfix
+            .col-md-4
+                p tel
+            .col-md-4
+                p logo
+            .col-md-4
+                p enter
+        .top-menu
+           +menu()
+
+        .choosevocation
+            form
+                .col-md-4
+                    input(type="text" name="name")
+                .col-md-4
+                    input(type="text" name="name")
