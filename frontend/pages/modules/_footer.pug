@@ -38,14 +38,42 @@
 
                 .sub-form
                     p Подпишись на нашу Рассылку
-
-                    form(action="" method="post")
-                        input(type="text" name="subname" placeholder="Ваш электронный адрес")
-                        input(type="submit" value="Отправить")
+                    .form-sub
+                        form(action="" method="post")
+                            input(type="text" name="subname" placeholder="Ваш электронный адрес")
+                            input(type="submit" value="Отправить")
 
 
             .col-md-3
                 h3 Контакты
+                //.l-icon.clearfix
+                //    img(src="images/map-icon.png")
+                //    span Украина, г. Запорожье
+                //.l-icon.clearfix
+                //    img(src="images/viber-icon.png")
+                //    span (050) 458-78-78
+                ul
+                    li
+                        span.l-icon
+                            img(src="images/map-icon.png")
+                        span.l-icon
+                            | Украина, г. Запорожье
+                    li
+                        span.l-icon
+                            img(src="images/viber-icon.png")
+                        span.l-icon
+                            | Украина, г. Запорожье
+                    //li
+                    //    span.l-icon
+                    //        img(src="images/viber-icon.png")
+                    //    | (050) 458-78-78
+                    //li
+                    //    span.l-icon
+                    //        img(src="images/envicon.png")
+                    //    | tural@ukr.net
+                    //li График работы
+                    //li Пн-Сб с 8.00 до 20.00
+                    //li Вс с 9.00 до 18.00
 .bmfooter
     .container
         .row
