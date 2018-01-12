@@ -4,6 +4,17 @@ footer
 .subfooter
   padding: 50px 0
   background-color: $subfooter_col
+  li
+    border: 1px solid red
+    display: block
+    overflow: hidden
+  .l-icon
+    float: left
+  //.l-icon span
+
+  .list-link
+    width: 85%
+    margin: 0 auto
   h3,
   .list-link li a
     font-family: 'Roboto', sans-serif
@@ -21,9 +32,29 @@ footer
   .list-link li a
     color: $activ_col
   .sub-form
+    margin-top: 30px
     p
       font-family: 'Open Sans', sans-serif
       font-size: 16px
+    .form-sub
+      margin: 30px 0
+      border: 1px solid red
+      input[type="text"],
+      input[type="submit"]
+        border: 0 solid red
+        font-size: 12px
+      input[type="text"]
+        padding: 10px
+        margin-right: 5px
+        background-color: $subfooter_col
+      input[type="submit"]
+        background-color: $btm_col
+        -webkit-border-radius: 3px
+        -moz-border-radius: 3px
+        border-radius: 3px
+        padding: 7px 17px
+        color: $subfooter_col
+
 .bmfooter
   background-color: $bmfooter_col
   margin: 0
