@@ -19,11 +19,15 @@ include _mixins
                         p Вход в личный кабинет
                         a(href="#")
                             img(src="images/enter-icon.png")
-            .top-menu
-               +menu()
-            .choosevocation
-                form
-                    .col-md-4
-                        input(type="text" name="name")
-                    .col-md-4
-                        input(type="text" name="name")
+            .menu-wrap.clearfix
+                nav
+                    .mobile-mnu.hidden-md.hidden-lg
+                        a(href="#").toggle-mnu.hidden-lg
+                            span
+                    +menu(menuItem)
+    //.choosevocation
+        //    form
+                       //        .col-md-4
+                       //            input(type="text" name="name")
+                       //        .col-md-4
+                       //            input(type="text" name="name")

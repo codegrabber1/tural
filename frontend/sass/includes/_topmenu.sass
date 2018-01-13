@@ -1,0 +1,80 @@
+.menu-wrap
+  border: 1px solid red
+nav
+  position: relative
+  float: right
+  .sf-arrows .sf-with-ul::after
+    //border-top-color: rgba(0,0,0,.5)
+  .sf-menu
+    margin: 0
+    padding: 0
+    position: static
+    .sf-mega
+      background-color:  rgba(0, 0, 0, 0.5)
+      ul
+        display: block
+        float: none
+        position: relative
+        li
+          background: none
+          a
+            color: $invert_col
+            &:hover
+              color: $activ_col
+    li
+      position: static
+      white-space: normal
+      background: none
+      &:hover
+        background-color:  $activ_col
+      > a
+          text-decoration: none
+          color: $font_col
+          font-size: 14px
+          border: none
+          &:hover
+            text-decoration: none
+            color: $invert_col
+            font-weight: bold
+    > li
+      > ul
+        width: 200px
+        left: auto
+        li
+          background-color:  rgba(0, 0, 0, 0.5)
+          &:hover
+            background-color:  rgba(0, 0, 0, 0.5)
+          a
+            color: $invert_col
+            &:hover
+              color: $activ_col
+  .toggle-mnu
+    display: block
+    width: 28px
+    height: 28px
+    margin-top: 14px
+    float: left
+    span:after, span:before
+      content: ""
+      position: absolute
+      left: 0
+      top: 9px
+    span:after
+      top: 18px
+    span
+      position: relative
+      display: block
+    span, span:after, span:before
+      width: 100%
+      height: 2px
+      background-color: $activ_col
+      transition: all 0.3s
+      backface-visibility: hidden
+      border-radius: 2px
+    &.on span
+      background-color: transparent
+    &.on span:before
+      transform: rotate(45deg) translate(-1px, 0px)
+
+    &.on span:after
+      transform: rotate(-45deg) translate(6px, -7px)

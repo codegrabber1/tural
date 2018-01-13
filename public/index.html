@@ -4,11 +4,15 @@
     <link href="libs/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=devise-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/megafish.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet"><!-- [if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
     <title>Головна сторінка
@@ -40,39 +44,43 @@
                   </div>
                 </div>
               </div>
-              <div class="top-menu">
-                        <ul class="sf-menu">
-                          <li><a href="Главная.html">Главная</a></li>
-                          <li><a href="Подбор туров.html">Подбор туров</a>
-                            <ul>
-                              <li><a href="#">Item1</a></li>
-                              <li><a href="#">Item2</a></li>
-                              <li><a href="#">Item3</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="Агенствам.html">Агенствам</a>
-                            <ul>
-                              <li><a href="#">Item1</a></li>
-                              <li><a href="#">Item2</a></li>
-                              <li><a href="#">Item3</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="Не нашли, что искали.html">Не нашли, что искали</a></li>
-                          <li><a href="Контакти.html">Контакти</a></li>
-                        </ul>
-              </div>
-              <div class="choosevocation">
-                <form>
-                  <div class="col-md-4">
-                    <input type="text" name="name">
-                  </div>
-                  <div class="col-md-4">
-                    <input type="text" name="name">
-                  </div>
-                </form>
+              <div class="menu-wrap clearfix">
+                <nav>
+                  <div class="mobile-mnu hidden-md hidden-lg"><a class="toggle-mnu hidden-lg" href="#"><span></span></a></div>
+                          <ul class="sf-menu">
+                            <li><a href="Главная.html">Главная</a></li>
+                            <li><a href="Подбор туров.html">Подбор туров</a>
+                              <div class="sf-mega">
+                                <ul class="mega-sub">
+                                  <li><a href="#">menuSubItem1</a></li>
+                                  <li><a href="#">menuSubItem2</a></li>
+                                  <li><a href="#">menuSubItem3</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li><a href="Агенствам.html">Агенствам</a>
+                              <div class="sf-mega">
+                                <ul class="mega-sub">
+                                  <li><a href="#">menuSubItem1</a></li>
+                                  <li><a href="#">menuSubItem2</a></li>
+                                  <li><a href="#">menuSubItem3</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li><a href="Не нашли, что искали.html">Не нашли, что искали</a></li>
+                            <li><a href="Контакти.html">Контакти</a></li>
+                          </ul>
+                </nav>
               </div>
             </div>
           </div>
+          <!--.choosevocation
+          //    form
+                         //        .col-md-4
+                         //            input(type="text" name="name")
+                         //        .col-md-4
+                         //            input(type="text" name="name")
+          -->
         </div>
       </header>
       <div class="content">
@@ -147,27 +155,26 @@
             </div>
             <div class="col-md-3">
               <h3>Контакты</h3>
-              <!--.l-icon.clearfix-->
-              <!--    img(src="images/map-icon.png")-->
-              <!--    span Украина, г. Запорожье-->
-              <!--.l-icon.clearfix-->
-              <!--    img(src="images/viber-icon.png")-->
-              <!--    span (050) 458-78-78-->
-              <ul>
-                <li><span class="l-icon"><img src="images/map-icon.png"></span><span class="l-icon">Украина, г. Запорожье</span></li>
-                <li><span class="l-icon"><img src="images/viber-icon.png"></span><span class="l-icon">Украина, г. Запорожье</span></li>
-                <!--li-->
-                <!--    span.l-icon-->
-                <!--        img(src="images/viber-icon.png")-->
-                <!--    | (050) 458-78-78-->
-                <!--li-->
-                <!--    span.l-icon-->
-                <!--        img(src="images/envicon.png")-->
-                <!--    | tural@ukr.net-->
-                <!--li График работы-->
-                <!--li Пн-Сб с 8.00 до 20.00-->
-                <!--li Вс с 9.00 до 18.00-->
-              </ul>
+              <div class="items clearfix">
+                <div class="item-icon"><img src="images/map-icon.png"></div>
+                <div class="item-text">Украина, г. Запорожье</div>
+              </div>
+              <div class="items clearfix">
+                <div class="item-icon"><img src="images/viber-icon.png"></div>
+                <div class="item-text">(050) 458-78-78</div>
+              </div>
+              <div class="items clearfix">
+                <div class="item-icon"><img src="images/envicon.png"></div>
+                <div class="item-text">tural@ukr.net</div>
+              </div>
+              <div class="items clearfix">
+                <div class="item-icon">Пн-Сб</div>
+                <div class="item-text">с 8.00 до 20.00</div>
+              </div>
+              <div class="items clearfix">
+                <div class="item-icon">Вс</div>
+                <div class="item-text">с 9.00 до 18.00</div>
+              </div>
             </div>
           </div>
         </div>
@@ -192,6 +199,8 @@
       </div>
     </footer>
     <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

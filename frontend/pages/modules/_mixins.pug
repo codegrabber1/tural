@@ -1,21 +1,24 @@
 -var menuItem = ["Главная", "Подбор туров", "Агенствам", "Не нашли, что искали", "Контакти"]
--var menuSubItem = ["Item1", "Item2", "Item3"]
--var menuSubItem2 = ["Item1", "Item2", "Item3"]
+-var menuSubItem = ["menuSubItem1", "menuSubItem2", "menuSubItem3"]
+-var menuSubItem2 = ["menuSubItem21", "menuSubItem22", "menuSubItem23"]
 mixin menu(items)
     ul.sf-menu
         each item in menuItem
             if item == menuItem[1]
                 li
                     a(href=item+".html") #{item}
-                    ul
-                        each item in menuSubItem
-                            li: a(href="#") #{item}
+                    .sf-mega
+                        ul.mega-sub
+                            each item in menuSubItem
+                                li: a(href="#") #{item}
+
             else if item == menuItem[2]
                 li
                     a(href=item+".html") #{item}
-                    ul
-                        each item in menuSubItem
-                            li: a(href="#") #{item}
+                    .sf-mega
+                        ul.mega-sub
+                            each item in menuSubItem
+                                li: a(href="#") #{item}
             else
                 li: a(href=item+".html") #{item}
 
@@ -25,7 +28,6 @@ mixin top_tel()
            | (050) 486-42-14
         li
            | (067) 741-74-11
-
 mixin copylist()
     ul
         li
