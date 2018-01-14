@@ -1,6 +1,6 @@
 footer
   width: 100%
-  border: 1px solid #000
+  position: relative
 .subfooter
   padding: 50px 0
   background-color: $subfooter_col
@@ -59,8 +59,18 @@ footer
 .bmfooter
   background-color: $bmfooter_col
   margin: 0
-  padding: 8px 0
+  padding: 0
+
   li, a
-    color: #ffffff
+    color: $invert_col
   a
     text-decoration: none
+  .footer-social li
+    display: inline-block
+    margin-right: 5px
+    a
+      color: $footicon_col
+      font-size: 30px
+  .footer-copy li a
+    color: $invert_col
+    font-size: 14px

@@ -1,7 +1,7 @@
 .subfooter
     .container
         .row
-            .col-md-3
+            .col-xs-12.col-sm-6.col-md-3
                 h3 Агенствам
                 ul
                     li
@@ -16,7 +16,7 @@
                         a(href="#") Правила оплаты
                     li
                         a(href="#") О компании "Турал"
-            .col-md-3
+            .col-xs-12.col-sm-6.col-md-3
                 h3 Направления
                 ul
                     li
@@ -27,7 +27,7 @@
                         a(href="#") Греция
                     li
                         a(href="#") Украина
-            .col-md-3
+            .col-xs-12.col-sm-6.col-md-3
                 ul.list-link
                     li
                        a(href="") поиск тура
@@ -42,7 +42,7 @@
                         form(action="" method="post")
                             input(type="text" name="subname" placeholder="Ваш электронный адрес")
                             input(type="submit" value="Отправить")
-            .col-md-3
+            .col-xs-12.col-sm-6.col-md-3
                 h3 Контакты
                 .items.clearfix
                     .item-icon
@@ -73,7 +73,9 @@
 .bmfooter
     .container
         .row
-            .col-md-5
-                +copylist()
-            .col-md-7
-                +footericon()
+            .col-xs-12.col-sm-6.col-md-5
+                .footer-copy
+                    +copylist()
+            .col-xs-12.col-sm-6.col-md-7
+                .footer-social
+                    +footericon()

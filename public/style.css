@@ -15,17 +15,32 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  background-color: #fff; }
+  font-weight: 400;
+  background-color: #fff;
+  max-width: 100%;
+  min-width: 320px; }
 
 .wrrap {
   width: 100%; }
+
+#top {
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+  font-size: 45px;
+  cursor: pointer;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #6585ff; }
 
 header {
   border: 0 solid green; }
 
 .top-slider {
-  background-image: url("images/slider1.jpg");
-  height: 400px; }
+  background-image: url("images/slider1.jpg"); }
 
 .top-header {
   background-color: rgba(0, 0, 0, 0.5);
@@ -58,7 +73,8 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    margin: 10px 0 0; }
+    margin: 10px 0 0;
+    text-align: center; }
   .top-header .top-logo a {
     display: block;
     text-align: center;
@@ -70,13 +86,11 @@ header {
     font-weight: 400;
     font-size: 12px;
     border: 0 solid red;
-    margin: 10px 0 0; }
+    margin: 10px 0 0;
+    float: right; }
     .top-header .top-enter a {
       display: block;
       float: right; }
-
-.top-enter {
-  float: right; }
 
 .menu-wrap {
   border: 1px solid red; }
@@ -84,6 +98,8 @@ header {
 nav {
   position: relative;
   float: right; }
+  nav .sf-arrows .sf-with-ul::after {
+    border-top-color: #fa7b0a; }
   nav .sf-menu {
     margin: 0;
     padding: 0;
@@ -103,14 +119,16 @@ nav {
     nav .sf-menu li {
       position: static;
       white-space: normal;
-      background: none; }
+      background: none;
+      font-weight: bold; }
       nav .sf-menu li:hover {
         background-color: #fa7b0a; }
       nav .sf-menu li > a {
         text-decoration: none;
         color: #292929;
         font-size: 14px;
-        border: none; }
+        border: none;
+        position: relative; }
         nav .sf-menu li > a:hover {
           text-decoration: none;
           color: #fff;
@@ -156,9 +174,42 @@ nav {
     nav .toggle-mnu.on span:after {
       transform: rotate(-45deg) translate(6px, -7px); }
 
+.proposeSlider .proposeSliderTabs {
+  border-top: 5px #6585ff solid; }
+  .proposeSlider .proposeSliderTabs .tabs {
+    margin: 0 auto;
+    border: 0 solid greenyellow;
+    width: 50%; }
+    .proposeSlider .proposeSliderTabs .tabs .tab {
+      display: block;
+      border: 0 solid red;
+      float: left;
+      text-align: center;
+      width: 33%;
+      position: relative;
+      padding: 20px 0; }
+      .proposeSlider .proposeSliderTabs .tabs .tab a {
+        color: #292929;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none; }
+      .proposeSlider .proposeSliderTabs .tabs .tab.active a, .proposeSlider .proposeSliderTabs .tabs .tab:hover a {
+        color: #6585ff;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .proposeSlider .proposeSliderTabs .tabs .tab.active:after, .proposeSlider .proposeSliderTabs .tabs .tab:hover:after {
+        content: '';
+        position: absolute;
+        border: 8px solid transparent;
+        border-top: 8px solid #6585ff;
+        left: 50%;
+        margin-left: -12px;
+        top: 0;
+        width: 0; }
+
 footer {
   width: 100%;
-  border: 1px solid #000; }
+  position: relative; }
 
 .subfooter {
   padding: 50px 0;
@@ -218,11 +269,20 @@ footer {
 .bmfooter {
   background-color: #494b5a;
   margin: 0;
-  padding: 8px 0; }
+  padding: 0; }
   .bmfooter li, .bmfooter a {
-    color: #ffffff; }
+    color: #fff; }
   .bmfooter a {
     text-decoration: none; }
+  .bmfooter .footer-social li {
+    display: inline-block;
+    margin-right: 5px; }
+    .bmfooter .footer-social li a {
+      color: #f99b53;
+      font-size: 30px; }
+  .bmfooter .footer-copy li a {
+    color: #fff;
+    font-size: 14px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -243,7 +303,22 @@ footer {
     display: none !important; } }
 
 @media only screen and (max-width: 768px) {
-  /**/ }
+  .top-header {
+    font-size: 17px; }
+    .top-header .top-tel {
+      margin-left: 30px; }
+    .top-header .call-form {
+      margin-top: 0; }
+      .top-header .call-form img {
+        width: 25px;
+        height: 22px; }
+      .top-header .call-form a {
+        margin: 0 0 0 15px; }
+    .top-header .top-logo {
+      margin-bottom: 10px; }
+  .footer-social,
+  .footer-copy {
+    text-align: center; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 667px) {

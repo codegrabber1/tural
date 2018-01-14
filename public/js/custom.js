@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
     $(".sf-menu").superfish({
         delay: 200,
         speed: "fast",
-        cssArrows: false
+        cssArrows: true
     });
     $(".sf-menu").after("<div id='my-menu'>");
     $(".sf-menu").clone().appendTo("#my-menu");
@@ -30,4 +30,11 @@ jQuery(document).ready(function($){
         return false;
     });
 // end top menu
+// scrollTo Top
+    $('#top').on('click', function() {
+        $("body, html").animate({
+            scrollTop: 0
+        }, 800); return false;
+    });
+
 });// end ready
