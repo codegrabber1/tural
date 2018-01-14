@@ -15,6 +15,7 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  font-weight: 400;
   background-color: #fff;
   max-width: 100%;
   min-width: 320px; }
@@ -39,8 +40,7 @@ header {
   border: 0 solid green; }
 
 .top-slider {
-  background-image: url("images/slider1.jpg");
-  height: 400px; }
+  background-image: url("images/slider1.jpg"); }
 
 .top-header {
   background-color: rgba(0, 0, 0, 0.5);
@@ -98,6 +98,8 @@ header {
 nav {
   position: relative;
   float: right; }
+  nav .sf-arrows .sf-with-ul::after {
+    border-top-color: #fa7b0a; }
   nav .sf-menu {
     margin: 0;
     padding: 0;
@@ -117,14 +119,16 @@ nav {
     nav .sf-menu li {
       position: static;
       white-space: normal;
-      background: none; }
+      background: none;
+      font-weight: bold; }
       nav .sf-menu li:hover {
         background-color: #fa7b0a; }
       nav .sf-menu li > a {
         text-decoration: none;
         color: #292929;
         font-size: 14px;
-        border: none; }
+        border: none;
+        position: relative; }
         nav .sf-menu li > a:hover {
           text-decoration: none;
           color: #fff;
@@ -170,9 +174,41 @@ nav {
     nav .toggle-mnu.on span:after {
       transform: rotate(-45deg) translate(6px, -7px); }
 
+.proposeSlider .proposeSliderTabs {
+  border-top: 5px #6585ff solid; }
+  .proposeSlider .proposeSliderTabs .tabs {
+    margin: 0 auto;
+    border: 0 solid greenyellow;
+    width: 50%; }
+    .proposeSlider .proposeSliderTabs .tabs .tab {
+      display: block;
+      border: 0 solid red;
+      float: left;
+      text-align: center;
+      width: 33%;
+      position: relative;
+      padding: 20px 0; }
+      .proposeSlider .proposeSliderTabs .tabs .tab a {
+        color: #292929;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none; }
+      .proposeSlider .proposeSliderTabs .tabs .tab.active a, .proposeSlider .proposeSliderTabs .tabs .tab:hover a {
+        color: #6585ff;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .proposeSlider .proposeSliderTabs .tabs .tab.active:after, .proposeSlider .proposeSliderTabs .tabs .tab:hover:after {
+        content: '';
+        position: absolute;
+        border: 8px solid transparent;
+        border-top: 8px solid #6585ff;
+        left: 50%;
+        margin-left: -12px;
+        top: 0;
+        width: 0; }
+
 footer {
   width: 100%;
-  border: 1px solid #000;
   position: relative; }
 
 .subfooter {

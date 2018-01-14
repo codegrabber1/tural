@@ -1,0 +1,37 @@
+.proposeSlider
+  .proposeSliderTabs
+    border-top: 5px $btm_col solid
+    .tabs
+      margin: 0 auto
+      border: 0 solid greenyellow
+      width: 50%
+      .tab
+        display: block
+        border: 0 solid red
+        float: left
+        text-align: center
+        width: 33%
+        position: relative
+        padding: 20px 0
+        a
+          color: $font_col
+          font-weight: bold
+          text-transform: uppercase
+          text-decoration: none
+        &.active,
+        &:hover
+          a
+            color: $btm_col
+            font-weight: bold
+            text-transform: uppercase
+          &:after
+            content: ''
+            position: absolute
+            border: 8px solid transparent
+            border-top: 8px solid $btm_col
+            left: 50%
+            margin-left: -12px
+            top: 0
+            width: 0
+
+

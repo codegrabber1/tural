@@ -7,13 +7,25 @@ block content
      .col-md-6
         p hello text
 block content
-    .proposeSlider
-        .col-md-4
-            p hello text
-        .col-md-4
-            p hello text
-        .col-md-4
-            p hello text
+    .proposeSlider.clearfix
+        .proposeSliderTabs.clearfix
+            .tabs.clearfix
+                span.tab.active
+                    a(href="#") Предложение дня
+                span.tab
+                    a(href="") Новые поступления
+                span.tab
+                    a(href="") Лидеры продаж
+            .tab_content.clearfix
+                .tab_item
+                    .col-md-4
+                        img(src="images/propose1.jpg")
+                    .col-md-4
+                        img(src="images/propose2.jpg")
+                    .col-md-4
+                        img(src="images/propose3.jpg")
+                .tab_item
+                .tab_item
     .ourTours
         h4 Наши тури
         .col-md-4

@@ -4,7 +4,7 @@ nav
   position: relative
   float: right
   .sf-arrows .sf-with-ul::after
-    //border-top-color: rgba(0,0,0,.5)
+    border-top-color: $activ_col
   .sf-menu
     margin: 0
     padding: 0
@@ -25,6 +25,7 @@ nav
       position: static
       white-space: normal
       background: none
+      font-weight: bold
       &:hover
         background-color:  $activ_col
       > a
@@ -32,6 +33,7 @@ nav
           color: $font_col
           font-size: 14px
           border: none
+          position: relative
           &:hover
             text-decoration: none
             color: $invert_col
