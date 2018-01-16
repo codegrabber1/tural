@@ -5,7 +5,7 @@ mixin menu(items)
     ul.sf-menu
         each item in menuItem
             if item == menuItem[1]
-                li
+                li(class="active")
                     a(href=item+".html") #{item}
                     .sf-mega
                         ul.mega-sub

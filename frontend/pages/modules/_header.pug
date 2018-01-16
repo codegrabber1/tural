@@ -1,7 +1,13 @@
 include _mixins
-.top-slider
-    .container
-        .row
+.top-slider.clearfix
+    //div(style="background-image:url('https://unsplash.it/1920/1200?image=839')")
+    //div(style="background-image:url(https://unsplash.it/1920/1200?image=839)")
+    #topSlider.owl-carousel
+        .item
+           img(src="images/slider1.jpg")
+.container
+    .row
+        .header-content.clearfix
             .top-header.clearfix
                 .col-xs-9.col-sm-3.col-md-3
                     +top_tel()
@@ -21,17 +27,40 @@ include _mixins
                         a(href="index.html")
                             img(src="images/top-logo.png" alt="Tural")
 
-
-
             .menu-wrap.clearfix
-                nav
+                nav.clearfix
                     .mobile-mnu.hidden-md.hidden-lg
                         a(href="#").toggle-mnu.hidden-lg
                             span
                     +menu(menuItem)
-    //.choosevocation
-        //    form
-                       //        .col-md-4
-                       //            input(type="text" name="name")
-                       //        .col-md-4
-                       //            input(type="text" name="name")
+            .header-logo.clearfix
+                a(href="./")
+                    img(src="images/big-logo.png" alt="Tural")
+                h1 Выбери свой отпуск
+            .choosevocation.clearfix
+                form
+                    .col-xs-12.col-sm-12.col-md-5
+                        .form-group
+                            label(for="resort") Курорт
+                            input(type="text" id="resort" name="name")
+                        .form-group
+                            label(for="cat") Категория
+                            input(type="text" id="cat" name="name")
+                    .col-xs-12.col-sm-6.col-md-4
+                        .form-group
+                            label(for="checkin") Заезд
+                            input(type="text" id="checkin" name="name" size="8")
+                        .form-group
+                            label(for="nights" class="small") Ночи
+                            input(type="text" id="nights" name="name" size="2")
+                        .form-group
+                            label(for="departure") Выезд
+                            input(type="text" id="departure" name="name" size="8")
+                    .col-xs-12.col-sm-6.col-md-3
+                        .form-group
+                            label(for="adults" class="small") Взрослые
+                            input(type="text" id="adults" name="name" size="3")
+                        .form-group
+                            label(for="child" class="small") Дети
+                            input(type="text" id="child" name="child" size="3")
+                        input(type="image" name="tourSearch" src="images/search-icon.png" value="find")

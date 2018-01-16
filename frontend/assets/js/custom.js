@@ -1,8 +1,19 @@
 jQuery(document).ready(function($){
+    $("#topSlider").sliderResponsive({
+        // Using default everything
+        // slidePause: 5000,
+        // fadeSpeed: 800,
+         //autoPlay: "on",
+        // showArrows: "on",
+        // hideDots: "off"
+        // hoverZoom: "on",
+        // titleBarTop: "off"
+    });
+
     // top menu
 
     $(".sf-menu").superfish({
-        delay: 200,
+        delay: 0,
         speed: "fast",
         cssArrows: true
     });
@@ -30,11 +41,66 @@ jQuery(document).ready(function($){
         return false;
     });
 // end top menu
+// tabs
+
+
+
 // scrollTo Top
     $('#top').on('click', function() {
         $("body, html").animate({
             scrollTop: 0
         }, 800); return false;
     });
+// headerBigSlider
+    $("#topSlider").owlCarousel({
+        //autoplayTimeout: 2000,
+        autoplay: false,
+        autoHeight: false,
+        // loop: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                //autoplayTimeout: 2000,
+            },
+            1920: {
+                items: 1,
+                nav: true,
+                //autoplayTimeout: 2000
+            }
+        }
+    });
+// owlCarousel
+    $("#owl-propose").owlCarousel({
+        pagination: true,
+        margin: 10,
+        center: false,
+        autoplayTimeout: 2000,
+        autoplay: false,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop: true,
+
+            }
+        }
+    });
+
 
 });// end ready
+$(document).on('click', '.yamm .dropdown-menu', function(e) {
+    e.stopPropagation()
+})

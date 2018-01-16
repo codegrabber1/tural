@@ -7,13 +7,14 @@ html(lang="ru-RU")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         meta(name="keywords" content="")
         meta(name="description" content="")
-        link(href="libs/bootstrap.min.css" rel="stylesheet")
+        //link(href="libs/bootstrap.min.css" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
         link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.min.css" rel="stylesheet")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/megafish.min.css" rel="stylesheet")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.css" rel="stylesheet")
-
         link(href="style.css" rel="stylesheet")
         <!-- [if lt IE 9]>
             script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js")
@@ -25,15 +26,16 @@ html(lang="ru-RU")
             header
                 include ../modules/_header
             .content
-                .container
-                    .row
-                        block content
+                block content
         footer
             include ../modules/_footer
             #top
                 i(class="fa fa-angle-up" aria-hidden="true")
         script(src="libs/jquery/jquery-3.2.1.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js")
+        script(src="libs/responsivbg/sliderResponsive.js")
         script(src="js/custom.js")

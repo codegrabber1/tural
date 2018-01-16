@@ -1,8 +1,36 @@
 header
   border: 0 solid green
+  display: block
 .top-slider
-  background-image: url('images/slider1.jpg')
-  //height: 400px
+  position: absolute
+  z-index: 1
+//#topSlider > div
+//  background-position: center center
+//  display: block
+//  width: 100%
+//  //height: 500px
+//  height: 500px
+//  position: relative
+//  background-size: cover
+//  background-repeat: no-repeat
+//  background-color: #000
+//  overflow: hidden
+//  -moz-transition: transform .4s
+//  -o-transition: transform .4s
+//  -webkit-transition: transform .4s
+//  transition: transform .4s
+//  z-index: 1
+////#topSlider > div
+////  position: absolute
+
+
+.header-content
+  border: 0 solid red
+  overflow: hidden
+  height: 100%
+  position: relative
+  z-index: 2
+
 .top-header
   background-color:  rgba(0, 0, 0, 0.5)
   color: $invert_col
@@ -40,16 +68,57 @@ header
     a
       display: block
       text-align: center
-      border: 0 solid red
       img
         margin: 0 auto
   .top-enter
     font-family: 'Open Sans', sans-serif
     font-weight: 400
     font-size: 12px
-    border: 0 solid red
     margin: 10px 0 0
     float: right
     a
       display: block
       float: right
+
+
+.header-logo
+  width: 90%
+  margin: 0 auto
+  text-align: center
+  line-height: 30px
+  img
+    margin: 0 auto
+  h1
+    font-size: 24px
+    text-transform: uppercase
+    color: $invert_col
+    font-family: 'Open Sans', sans-serif
+.choosevocation
+  background-color:  rgba(0, 0, 0, 0.5)
+  margin: 20px auto
+  width: 90%
+  .form-group
+    float: left
+    overflow: hidden
+    width: auto
+    margin-right: 10px
+    margin-bottom: 0
+    label
+      display: block
+      margin: 0
+      padding: 0
+      color: $invert_col
+      text-transform: uppercase
+      font-weight: 400
+      font-size: 18px
+      position: relative
+      //background: url('images/form-icons.png') 0 0
+      &.small
+        font-size: 14px
+        font-family: 'Open Sans', sans-serif
+        margin-top: 6px
+  input[type="text"]
+    margin: 0 auto
+  input[type="image"]
+    margin: 20px 0 0 20px
+

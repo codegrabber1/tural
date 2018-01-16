@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <!--link(href="libs/bootstrap.min.css" rel="stylesheet")-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/megafish.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.css" rel="stylesheet">
@@ -21,9 +23,16 @@
   <body>
     <div class="wrrap">
       <header>
-        <div class="top-slider">
-          <div class="container">
-            <div class="row">
+        <div class="top-slider clearfix">
+          <!--div(style="background-image:url('https://unsplash.it/1920/1200?image=839')")-->
+          <!--div(style="background-image:url(https://unsplash.it/1920/1200?image=839)")-->
+          <div class="owl-carousel" id="topSlider">
+            <div class="item"><img src="images/slider1.jpg"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="header-content clearfix">
               <div class="top-header clearfix">
                 <div class="col-xs-9 col-sm-3 col-md-3">
                           <ul class="top-tel">
@@ -45,11 +54,11 @@
                 </div>
               </div>
               <div class="menu-wrap clearfix">
-                <nav>
+                <nav class="clearfix">
                   <div class="mobile-mnu hidden-md hidden-lg"><a class="toggle-mnu hidden-lg" href="#"><span></span></a></div>
                           <ul class="sf-menu">
                             <li><a href="Главная.html">Главная</a></li>
-                            <li><a href="Подбор туров.html">Подбор туров</a>
+                            <li class="active"><a href="Подбор туров.html">Подбор туров</a>
                               <div class="sf-mega">
                                 <ul class="mega-sub">
                                   <li><a href="#">menuSubItem1</a></li>
@@ -72,48 +81,117 @@
                           </ul>
                 </nav>
               </div>
+              <div class="header-logo clearfix"><a href="./"><img src="images/big-logo.png" alt="Tural"></a>
+                <h1>Выбери свой отпуск</h1>
+              </div>
+              <div class="choosevocation clearfix">
+                <form>
+                  <div class="col-xs-12 col-sm-12 col-md-5">
+                    <div class="form-group">
+                      <label for="resort">Курорт</label>
+                      <input type="text" id="resort" name="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="cat">Категория</label>
+                      <input type="text" id="cat" name="name">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <label for="checkin">Заезд</label>
+                      <input type="text" id="checkin" name="name" size="8">
+                    </div>
+                    <div class="form-group">
+                      <label class="small" for="nights">Ночи</label>
+                      <input type="text" id="nights" name="name" size="2">
+                    </div>
+                    <div class="form-group">
+                      <label for="departure">Выезд</label>
+                      <input type="text" id="departure" name="name" size="8">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="form-group">
+                      <label class="small" for="adults">Взрослые</label>
+                      <input type="text" id="adults" name="name" size="3">
+                    </div>
+                    <div class="form-group">
+                      <label class="small" for="child">Дети</label>
+                      <input type="text" id="child" name="child" size="3">
+                    </div>
+                    <input type="image" name="tourSearch" src="images/search-icon.png" value="find">
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-          <!--.choosevocation
-          //    form
-                         //        .col-md-4
-                         //            input(type="text" name="name")
-                         //        .col-md-4
-                         //            input(type="text" name="name")
-          -->
         </div>
       </header>
       <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="proposeSlider clearfix">
+        <section class="proposeSlider clearfix">
+          <div class="container">
+            <div class="row">
               <div class="proposeSliderTabs clearfix">
-                <div class="tabs clearfix"><span class="tab active"><a href="#">Предложение дня</a></span><span class="tab"><a href="">Новые поступления</a></span><span class="tab"><a href="">Лидеры продаж</a></span></div>
+                <div class="tabs clearfix"><span class="tab active"><a href="#tab1">Предложение дня</a></span><span class="tab"><a href="#tab2">Новые поступления</a></span><span class="tab"><a href="#tab3">Лидеры продаж</a></span></div>
                 <div class="tab_content clearfix">
-                  <div class="tab_item">
-                    <div class="col-md-4"><img src="images/propose1.jpg"></div>
-                    <div class="col-md-4"><img src="images/propose2.jpg"></div>
-                    <div class="col-md-4"><img src="images/propose3.jpg"></div>
+                  <div class="tab_item clearfix" id="tab1">
+                    <div class="owl-carousel" id="owl-propose">
+                      <div class="item"><img src="images/propose1.jpg"></div>
+                      <div class="item"><img src="images/propose2.jpg"></div>
+                      <div class="item"><img src="images/propose3.jpg"></div>
+                      <div class="item"><img src="images/propose1.jpg"></div>
+                      <div class="item"><img src="images/propose2.jpg"></div>
+                      <div class="item"><img src="images/propose3.jpg"></div>
+                      <div class="item"><img src="images/propose1.jpg"></div>
+                      <div class="item"><img src="images/propose2.jpg"></div>
+                    </div>
                   </div>
-                  <div class="tab_item"></div>
-                  <div class="tab_item"></div>
                 </div>
               </div>
             </div>
-            <div class="ourTours">
+          </div>
+        </section>
+        <section class="ourTours clearfix">
+          <div class="container">
+            <div class="row">
               <h4>Наши тури</h4>
               <div class="col-md-4">
-                <p>hello text</p>
+                <div class="Cat-pict"><img src="images/cruise1.jpg"></div>
               </div>
               <div class="col-md-4">
-                <p>hello text</p>
+                <div class="Cat-pict"><img src="images/cruise2.jpg"></div>
               </div>
               <div class="col-md-4">
-                <p>hello text</p>
+                <div class="Cat-pict"><img src="images/cruise3.jpg"></div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="mainNews clearfix">
+          <div class="container">
+            <div class="row">
+              <div class="mainNewsTabs clearfix">
+                <div class="tabs clearfix"><span class="tab active"><a href="#tab1">Статьи</a></span><span class="tab"><a href="#tab2">Новости</a></span></div>
+                <div class="tab_content clearfix">
+                  <div class="tab_item clearfix" id="tab1">
+                    <div class="owl-carousel" id="owl-propose">
+                      <div class="item"><img src="images/propose1.jpg"></div>
+                      <div class="item"><img src="images/propose2.jpg"></div>
+                      <div class="item"><img src="images/propose3.jpg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials clearfix">
+          <div class="container">
+            <div class="row">
+              <p>slider</p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <footer>
@@ -209,9 +287,12 @@
       <div id="top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
     </footer>
     <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="libs/responsivbg/sliderResponsive.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

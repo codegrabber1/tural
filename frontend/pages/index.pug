@@ -2,35 +2,68 @@ extends layout/main
 block title
    | Головна сторінка
 block content
-     .col-md-6
-        p hello text
-     .col-md-6
-        p hello text
-block content
-    .proposeSlider.clearfix
-        .proposeSliderTabs.clearfix
-            .tabs.clearfix
-                span.tab.active
-                    a(href="#") Предложение дня
-                span.tab
-                    a(href="") Новые поступления
-                span.tab
-                    a(href="") Лидеры продаж
-            .tab_content.clearfix
-                .tab_item
-                    .col-md-4
-                        img(src="images/propose1.jpg")
-                    .col-md-4
-                        img(src="images/propose2.jpg")
-                    .col-md-4
-                        img(src="images/propose3.jpg")
-                .tab_item
-                .tab_item
-    .ourTours
-        h4 Наши тури
-        .col-md-4
-            p hello text
-        .col-md-4
-            p hello text
-        .col-md-4
-            p hello text
+    section.proposeSlider.clearfix
+        .container
+            .row
+                .proposeSliderTabs.clearfix
+                    .tabs.clearfix
+                        span.tab.active
+                            a(href="#tab1") Предложение дня
+                        span.tab
+                            a(href="#tab2") Новые поступления
+                        span.tab
+                            a(href="#tab3") Лидеры продаж
+                    .tab_content.clearfix
+                        #tab1.tab_item.clearfix
+                            #owl-propose.owl-carousel
+                                .item
+                                    img(src="images/propose1.jpg")
+                                .item
+                                    img(src="images/propose2.jpg")
+                                .item
+                                    img(src="images/propose3.jpg")
+                                .item
+                                    img(src="images/propose1.jpg")
+                                .item
+                                    img(src="images/propose2.jpg")
+                                .item
+                                    img(src="images/propose3.jpg")
+                                .item
+                                    img(src="images/propose1.jpg")
+                                .item
+                                    img(src="images/propose2.jpg")
+    section.ourTours.clearfix
+        .container
+            .row
+                h4 Наши тури
+                .col-md-4
+                    .Cat-pict
+                        img(src="images/cruise1.jpg")
+                .col-md-4
+                    .Cat-pict
+                        img(src="images/cruise2.jpg")
+                .col-md-4
+                    .Cat-pict
+                        img(src="images/cruise3.jpg")
+    section.mainNews.clearfix
+        .container
+            .row
+                .mainNewsTabs.clearfix
+                    .tabs.clearfix
+                        span.tab.active
+                            a(href="#tab1") Статьи
+                        span.tab
+                            a(href="#tab2") Новости
+                    .tab_content.clearfix
+                        #tab1.tab_item.clearfix
+                            #owl-propose.owl-carousel
+                                .item
+                                    img(src="images/propose1.jpg")
+                                .item
+                                    img(src="images/propose2.jpg")
+                                .item
+                                    img(src="images/propose3.jpg")
+    section.testimonials.clearfix
+        .container
+            .row
+               p slider
