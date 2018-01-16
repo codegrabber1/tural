@@ -33,10 +33,9 @@
   .tab_content
   .tab_item
     overflow: hidden
-  .controls
-    position: absolute
-    z-index: 2
-    top: 50%
+    display: none
+    &:first-child
+      display: block
   .owl-nav
     div
       width: 25px
@@ -53,30 +52,36 @@
   .tabs
     margin: 0 auto
     width: 40%
-  .tab
-    display: block
-    float: left
-    text-align: center
-    width: 50%
-    position: relative
-    padding: 20px 0
-    a
-      color: $font_col
-      font-weight: bold
-      text-transform: uppercase
-      text-decoration: none
+    .tab
+      display: block
+      float: left
+      text-align: center
+      width: 50%
+      position: relative
+      padding: 20px 0
+      a
+        color: $font_col
+        font-weight: bold
+        text-transform: uppercase
+        text-decoration: none
       &.active,
       &:hover
         a
           color: $activ_col
           font-weight: bold
           text-transform: uppercase
-        &:after
-          content: ''
-          position: absolute
-          border: 8px solid transparent
-          border-top: 8px solid $activ_col
-          left: 50%
-          margin-left: -12px
-          top: 0
-          width: 0
+          &:after
+            content: ''
+            position: absolute
+            border: 8px solid transparent
+            border-top: 8px solid $activ_col
+            left: 50%
+            margin-left: -12px
+            top: 0
+            width: 0
+  .tab-item
+    overflow: hidden
+    display: none
+    color: #fff
+    &:first-child
+      display: block

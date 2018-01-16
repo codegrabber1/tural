@@ -25,6 +25,9 @@ body {
   max-width: 100%;
   min-width: 320px; }
 
+section {
+  display: block; }
+
 .wrrap {
   width: 100%; }
 
@@ -42,19 +45,20 @@ body {
   background-color: #6585ff; }
 
 header {
-  border: 0 solid green;
+  border: 1px solid green;
   display: block; }
 
 .top-slider {
-  position: absolute;
-  z-index: 1; }
+  background: url("images/slider1.jpg") center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  height: 100%; }
 
 .header-content {
   border: 0 solid red;
   overflow: hidden;
-  height: 100%;
-  position: relative;
-  z-index: 2; }
+  height: 100%; }
 
 .top-header {
   background-color: rgba(0, 0, 0, 0.5);
@@ -278,11 +282,10 @@ nav {
           top: 0;
           width: 0; }
     .proposeSlider .proposeSliderTabs .tab_item {
-      overflow: hidden; }
-    .proposeSlider .proposeSliderTabs .controls {
-      position: absolute;
-      z-index: 2;
-      top: 50%; }
+      overflow: hidden;
+      display: none; }
+      .proposeSlider .proposeSliderTabs .tab_item:first-child {
+        display: block; }
     .proposeSlider .proposeSliderTabs .owl-nav div {
       width: 25px;
       height: 35px;
@@ -297,31 +300,37 @@ nav {
     .proposeSlider .mainNewsTabs .tabs {
       margin: 0 auto;
       width: 40%; }
-    .proposeSlider .mainNewsTabs .tab {
-      display: block;
-      float: left;
-      text-align: center;
-      width: 50%;
-      position: relative;
-      padding: 20px 0; }
-      .proposeSlider .mainNewsTabs .tab a {
-        color: #292929;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-decoration: none; }
-        .proposeSlider .mainNewsTabs .tab a.active a, .proposeSlider .mainNewsTabs .tab a:hover a {
+      .proposeSlider .mainNewsTabs .tabs .tab {
+        display: block;
+        float: left;
+        text-align: center;
+        width: 50%;
+        position: relative;
+        padding: 20px 0; }
+        .proposeSlider .mainNewsTabs .tabs .tab a {
+          color: #292929;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-decoration: none; }
+        .proposeSlider .mainNewsTabs .tabs .tab.active a, .proposeSlider .mainNewsTabs .tabs .tab:hover a {
           color: #fa7b0a;
           font-weight: bold;
           text-transform: uppercase; }
-        .proposeSlider .mainNewsTabs .tab a.active:after, .proposeSlider .mainNewsTabs .tab a:hover:after {
-          content: '';
-          position: absolute;
-          border: 8px solid transparent;
-          border-top: 8px solid #fa7b0a;
-          left: 50%;
-          margin-left: -12px;
-          top: 0;
-          width: 0; }
+          .proposeSlider .mainNewsTabs .tabs .tab.active a:after, .proposeSlider .mainNewsTabs .tabs .tab:hover a:after {
+            content: '';
+            position: absolute;
+            border: 8px solid transparent;
+            border-top: 8px solid #fa7b0a;
+            left: 50%;
+            margin-left: -12px;
+            top: 0;
+            width: 0; }
+    .proposeSlider .mainNewsTabs .tab-item {
+      overflow: hidden;
+      display: none;
+      color: #fff; }
+      .proposeSlider .mainNewsTabs .tab-item:first-child {
+        display: block; }
 
 .ourTours {
   background-color: #e9e5e2;
@@ -336,7 +345,6 @@ nav {
   background: url("images/mainsrticle-bg.jpg") center center no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
-  opacity: 0.2;
   height: 400px; }
   .mainNews .proposeSliderTabs {
     border-top: 5px #6585ff solid; }
@@ -369,11 +377,10 @@ nav {
           top: 0;
           width: 0; }
     .mainNews .proposeSliderTabs .tab_item {
-      overflow: hidden; }
-    .mainNews .proposeSliderTabs .controls {
-      position: absolute;
-      z-index: 2;
-      top: 50%; }
+      overflow: hidden;
+      display: none; }
+      .mainNews .proposeSliderTabs .tab_item:first-child {
+        display: block; }
     .mainNews .proposeSliderTabs .owl-nav div {
       width: 25px;
       height: 35px;
@@ -388,31 +395,37 @@ nav {
     .mainNews .mainNewsTabs .tabs {
       margin: 0 auto;
       width: 40%; }
-    .mainNews .mainNewsTabs .tab {
-      display: block;
-      float: left;
-      text-align: center;
-      width: 50%;
-      position: relative;
-      padding: 20px 0; }
-      .mainNews .mainNewsTabs .tab a {
-        color: #292929;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-decoration: none; }
-        .mainNews .mainNewsTabs .tab a.active a, .mainNews .mainNewsTabs .tab a:hover a {
+      .mainNews .mainNewsTabs .tabs .tab {
+        display: block;
+        float: left;
+        text-align: center;
+        width: 50%;
+        position: relative;
+        padding: 20px 0; }
+        .mainNews .mainNewsTabs .tabs .tab a {
+          color: #292929;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-decoration: none; }
+        .mainNews .mainNewsTabs .tabs .tab.active a, .mainNews .mainNewsTabs .tabs .tab:hover a {
           color: #fa7b0a;
           font-weight: bold;
           text-transform: uppercase; }
-        .mainNews .mainNewsTabs .tab a.active:after, .mainNews .mainNewsTabs .tab a:hover:after {
-          content: '';
-          position: absolute;
-          border: 8px solid transparent;
-          border-top: 8px solid #fa7b0a;
-          left: 50%;
-          margin-left: -12px;
-          top: 0;
-          width: 0; }
+          .mainNews .mainNewsTabs .tabs .tab.active a:after, .mainNews .mainNewsTabs .tabs .tab:hover a:after {
+            content: '';
+            position: absolute;
+            border: 8px solid transparent;
+            border-top: 8px solid #fa7b0a;
+            left: 50%;
+            margin-left: -12px;
+            top: 0;
+            width: 0; }
+    .mainNews .mainNewsTabs .tab-item {
+      overflow: hidden;
+      display: none;
+      color: #fff; }
+      .mainNews .mainNewsTabs .tab-item:first-child {
+        display: block; }
 
 footer {
   width: 100%;
@@ -529,7 +542,8 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 667px) {
-  /**/ }
+  .proposeSlider .proposeSliderTabs .tabs {
+    width: 100%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

@@ -14,7 +14,7 @@ block content
                         span.tab
                             a(href="#tab3") Лидеры продаж
                     .tab_content.clearfix
-                        #tab1.tab_item.clearfix
+                        .tab_item.clearfix
                             #owl-propose.owl-carousel
                                 .item
                                     img(src="images/propose1.jpg")
@@ -32,6 +32,27 @@ block content
                                     img(src="images/propose1.jpg")
                                 .item
                                     img(src="images/propose2.jpg")
+                        .tab_item
+                            #owl-propose2.owl-carousel
+                                .item
+                                    img(src="images/propose1.jpg")
+                                .item
+                                    img(src="images/propose2.jpg")
+                                .item
+                                    img(src="images/propose3.jpg")
+                                .item
+                                    img(src="images/propose1.jpg")
+                                .item
+                                    img(src="images/propose2.jpg")
+                                .item
+                                    img(src="images/propose3.jpg")
+                                .item
+                                    img(src="images/propose1.jpg")
+                                .item
+                                    img(src="images/propose2.jpg")
+                        .tab_item
+                            | item
+                            | item
     section.ourTours.clearfix
         .container
             .row
@@ -51,18 +72,28 @@ block content
                 .mainNewsTabs.clearfix
                     .tabs.clearfix
                         span.tab.active
-                            a(href="#tab1") Статьи
+                            a(href="#tab-1") Статьи
                         span.tab
-                            a(href="#tab2") Новости
+                            a(href="#tab-2") Новости
                     .tab_content.clearfix
-                        #tab1.tab_item.clearfix
-                            #owl-propose.owl-carousel
+                        .tab-item.clearfix
+                            #mainArt.owl-carousel
                                 .item
                                     img(src="images/propose1.jpg")
                                 .item
                                     img(src="images/propose2.jpg")
                                 .item
                                     img(src="images/propose3.jpg")
+                        .tab-item.clearfix
+                            .item
+                                | item
+                            //#mainNews1.owl-carousel
+                            //    .item
+                            //        img(src="images/propose1.jpg")
+                            //    .item
+                            //        img(src="images/propose2.jpg")
+                            //    .item
+                            //        img(src="images/propose3.jpg")
     section.testimonials.clearfix
         .container
             .row

@@ -1,66 +1,66 @@
 include _mixins
 .top-slider.clearfix
-    //div(style="background-image:url('https://unsplash.it/1920/1200?image=839')")
-    //div(style="background-image:url(https://unsplash.it/1920/1200?image=839)")
-    #topSlider.owl-carousel
-        .item
-           img(src="images/slider1.jpg")
-.container
-    .row
-        .header-content.clearfix
-            .top-header.clearfix
-                .col-xs-9.col-sm-3.col-md-3
-                    +top_tel()
-                    .call-form.clearfix
-                        img(src="images/viber_white.png")
-                        a(href="#") Обратний звонок
+    //#topSlider.owl-carousel
+    //    .item.clearfix
+    //        img(src="images/slider1.jpg")
+    //    .item.clearfix
+    //        img(src="images/slider1.jpg")
+    .container
+        .row
+            .header-content.clearfix
+                .top-header.clearfix
+                    .col-xs-9.col-sm-3.col-md-3
+                        +top_tel()
+                        .call-form.clearfix
+                            img(src="images/viber_white.png")
+                            a(href="#") Обратний звонок
 
-                .col-xs-3.col-sm-1.col-sm-push-8.col-md-3.col-md-push-6
-                    .top-enter.clearfix
-                        p.hidden-xs.hidden-sm Вход в личный кабинет
-                        a(href="#" title="Вход в личный кабинет")
-                            img(src="images/enter-icon.png")
-                .col-xs-12.col-sm-8.col-sm-pull-1.col-md-6.col-md-pull-3
-                    .top-kurs
-                        p Курс валют: 22.11.17$ = 27.02 грн € = 31.66 грн  Р = 0.46 грн
-                    .top-logo
-                        a(href="index.html")
-                            img(src="images/top-logo.png" alt="Tural")
+                    .col-xs-3.col-sm-1.col-sm-push-8.col-md-3.col-md-push-6
+                        .top-enter.clearfix
+                            p.hidden-xs.hidden-sm Вход в личный кабинет
+                            a(href="#" title="Вход в личный кабинет")
+                                img(src="images/enter-icon.png")
+                    .col-xs-12.col-sm-8.col-sm-pull-1.col-md-6.col-md-pull-3
+                        .top-kurs
+                            p Курс валют: 22.11.17$ = 27.02 грн € = 31.66 грн  Р = 0.46 грн
+                        .top-logo
+                            a(href="index.html")
+                                img(src="images/top-logo.png" alt="Tural")
 
-            .menu-wrap.clearfix
-                nav.clearfix
-                    .mobile-mnu.hidden-md.hidden-lg
-                        a(href="#").toggle-mnu.hidden-lg
-                            span
-                    +menu(menuItem)
-            .header-logo.clearfix
-                a(href="./")
-                    img(src="images/big-logo.png" alt="Tural")
-                h1 Выбери свой отпуск
-            .choosevocation.clearfix
-                form
-                    .col-xs-12.col-sm-12.col-md-5
-                        .form-group
-                            label(for="resort") Курорт
-                            input(type="text" id="resort" name="name")
-                        .form-group
-                            label(for="cat") Категория
-                            input(type="text" id="cat" name="name")
-                    .col-xs-12.col-sm-6.col-md-4
-                        .form-group
-                            label(for="checkin") Заезд
-                            input(type="text" id="checkin" name="name" size="8")
-                        .form-group
-                            label(for="nights" class="small") Ночи
-                            input(type="text" id="nights" name="name" size="2")
-                        .form-group
-                            label(for="departure") Выезд
-                            input(type="text" id="departure" name="name" size="8")
-                    .col-xs-12.col-sm-6.col-md-3
-                        .form-group
-                            label(for="adults" class="small") Взрослые
-                            input(type="text" id="adults" name="name" size="3")
-                        .form-group
-                            label(for="child" class="small") Дети
-                            input(type="text" id="child" name="child" size="3")
-                        input(type="image" name="tourSearch" src="images/search-icon.png" value="find")
+                .menu-wrap.clearfix
+                    nav.clearfix
+                        .mobile-mnu.hidden-md.hidden-lg
+                            a(href="#").toggle-mnu.hidden-lg
+                                span
+                        +menu(menuItem)
+                .header-logo.clearfix
+                    a(href="./")
+                        img(src="images/big-logo.png" alt="Tural")
+                    h1 Выбери свой отпуск
+                .choosevocation.clearfix
+                    form
+                        .col-xs-12.col-sm-12.col-md-5
+                            .form-group
+                                label(for="resort") Курорт
+                                input(type="text" id="resort" name="name")
+                            .form-group
+                                label(for="cat") Категория
+                                input(type="text" id="cat" name="name")
+                        .col-xs-12.col-sm-6.col-md-4
+                            .form-group
+                                label(for="checkin") Заезд
+                                input(type="text" id="checkin" name="name" size="8")
+                            .form-group
+                                label(for="nights" class="small") Ночи
+                                input(type="text" id="nights" name="name" size="2")
+                            .form-group
+                                label(for="departure") Выезд
+                                input(type="text" id="departure" name="name" size="8")
+                        .col-xs-12.col-sm-6.col-md-3
+                            .form-group
+                                label(for="adults" class="small") Взрослые
+                                input(type="text" id="adults" name="name" size="3")
+                            .form-group
+                                label(for="child" class="small") Дети
+                                input(type="text" id="child" name="child" size="3")
+                            input(type="image" name="tourSearch" src="images/search-icon.png" value="find")

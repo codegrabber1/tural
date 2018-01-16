@@ -1,15 +1,4 @@
 jQuery(document).ready(function($){
-    $("#topSlider").sliderResponsive({
-        // Using default everything
-        // slidePause: 5000,
-        // fadeSpeed: 800,
-         //autoPlay: "on",
-        // showArrows: "on",
-        // hideDots: "off"
-        // hoverZoom: "on",
-        // titleBarTop: "off"
-    });
-
     // top menu
 
     $(".sf-menu").superfish({
@@ -42,9 +31,17 @@ jQuery(document).ready(function($){
     });
 // end top menu
 // tabs
-
-
-
+    $('.proposeSliderTabs .tab').click(function(){
+        $('.proposeSliderTabs .tab').removeClass('active')
+            .eq($(this).index()).addClass('active');
+        $('.tab_item').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('active');
+// newsTabs
+    $('.mainNewsTabs .tab').click(function(){
+        $('.mainNewsTabs .tab').removeClass('active')
+            .eq($(this).index()).addClass('active');
+        $('.tab-item').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('active');
 // scrollTo Top
     $('#top').on('click', function() {
         $("body, html").animate({
@@ -52,25 +49,10 @@ jQuery(document).ready(function($){
         }, 800); return false;
     });
 // headerBigSlider
-    $("#topSlider").owlCarousel({
-        //autoplayTimeout: 2000,
-        autoplay: false,
-        autoHeight: false,
-        // loop: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true,
-                //autoplayTimeout: 2000,
-            },
-            1920: {
-                items: 1,
-                nav: true,
-                //autoplayTimeout: 2000
-            }
-        }
-    });
+//     $("#topSlider").owlCarousel({
+//         items:1
+//
+//     });
 // owlCarousel
     $("#owl-propose").owlCarousel({
         pagination: true,
@@ -98,8 +80,60 @@ jQuery(document).ready(function($){
             }
         }
     });
+// tabsCarousel
+    $("#owl-propose2").owlCarousel({
+        pagination: true,
+        margin: 10,
+        center: false,
+        autoplayTimeout: 2000,
+        autoplay: false,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop: true,
 
+            }
+        }
+    });
+// mainArticles
+    $("#mainArt").owlCarousel({
+        pagination: true,
+        margin: 10,
+        center: false,
+        autoplayTimeout: 2000,
+        autoplay: false,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop: true,
 
+            }
+        }
+    });
 });// end ready
 $(document).on('click', '.yamm .dropdown-menu', function(e) {
     e.stopPropagation()
