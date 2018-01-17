@@ -134,6 +134,48 @@ jQuery(document).ready(function($){
             }
         }
     });
+
+// Main responce
+    $("#response").owlCarousel({
+        items: 2,
+        margin: 20,
+        nav: true,
+        dots: true,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items: 1,
+                nav:true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items:1,
+                nav:false
+            },
+            1000:{
+                items:2,
+                nav:true,
+                loop: true,
+
+            }
+        }
+
+    });
+// sidebar Propose
+    $('#sidepropose').owlCarousel({
+        items: 1,
+        navText: "",
+        nav: true
+    });
+// Relatetd tours
+    $("#reltours").owlCarousel({
+        items: 4,
+        nav: true,
+        margin: 20,
+        navText: ""
+
+    });
 });// end ready
 $(document).on('click', '.yamm .dropdown-menu', function(e) {
     e.stopPropagation()

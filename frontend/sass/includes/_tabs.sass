@@ -41,14 +41,28 @@
       width: 25px
       height: 35px
       background-image: url("images/proposeArrows.png")
-      top: 45%
+      top: 35%
       position: absolute
       &.owl-next
         right: 0
         background-position: top right
-
+  .owl-dots
+    text-align: center
+    margin-top: 15px
+    .owl-dot
+      width: 13px
+      height: 13px
+      border-radius: 100%
+      border: 1px solid #ccc
+      background: #fff
+      margin-right: 5px
+      display: inline-block  /*for making them horizontal, if you want vertical then you can use- display: block*/
+      &.active
+        background: $activ_col
 .mainNewsTabs
   border-top: 5px $activ_col solid
+  z-index: 1
+  position: relative
   .tabs
     margin: 0 auto
     width: 40%

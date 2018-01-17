@@ -9,13 +9,74 @@
   h4
     text-align: center
     text-transform: uppercase
-  .Cat-pict
+  .cat-container
+    //display: flex
+    border: 1px solid red
+  .cat-pict
+    display: inline-block
+
+    //flex-shrink: 3
+    //padding: 0 15px
+    &:first-child,
+    &:last-child
+      padding: 0
+      //flex-shrink: 1
 .mainNews
   width: 100%
   background: url("images/mainsrticle-bg.jpg") center center no-repeat
-  -webkit-background-size: 100%
-  background-size: 100%
-  //opacity: 0.2
-  height: 400px
+  -webkit-background-size: cover
+  background-size: cover
+  position: relative
+  min-height: 400px
+  height: 100%
   @import "tabs"
 
+.testimonials
+  border: 1px solid red
+  padding: 20px 0
+  h3
+    text-align: center
+    color: $btm_col
+    text-transform: uppercase
+  .testimonials-block
+    .item
+      border-top: 3px solid $btm_col
+      padding-top: 10px
+      h3
+        width: 100%
+        text-align: center
+        color: #000
+        margin-top: 5px
+        margin-bottom: 15px
+      img
+        width: 300px
+        float: left
+        margin-right: 20px
+      p
+        font-size: 14px
+        margin: 40px 0
+    .owl-dots
+      text-align: center
+      position: relative
+      bottom: -12px
+      .owl-dot
+        width: 13px
+        height: 13px
+        border-radius: 100%
+        border: 1px solid #ccc
+        background: #fff
+        top: 15px
+        margin-right: 5px
+        display: inline-block  /*for making them horizontal, if you want vertical then you can use- display: block*/
+        &.active
+          background: $btm_col
+    .owl-nav
+      div
+        width: 25px
+        height: 35px
+        background-image: url("images/responceArr.png")
+        top: 10px
+        position: absolute
+        &.owl-next
+          right: 0
+          background-position: top right

@@ -1,0 +1,77 @@
+.breadcrumbs
+  background-color: #ccc
+  width: 100%
+  ul
+    li
+      float: left
+      display: block
+      margin: 13px 0
+      a
+        color: #000
+        text-decoration: none
+        &:hover
+          text-decoration: none
+      .fa
+        margin: 0 5px
+        color: $activ_col
+.article-content,
+aside
+  margin: 20px 0
+  h2
+    font-size: 24px
+    text-align: center
+  img
+    margin: 20px auto
+  p
+    line-height: 24px
+    margin: 10px 0
+.related-posts,
+.reltours
+  margin: 100px 0
+.reltours
+  .item
+    border-top: 3px solid $btm_col
+    p
+      text-align: center
+      margin: 10px 0
+    img
+      margin: 15px 0
+  .owl-dots
+    text-align: center
+    position: relative
+    bottom: -12px
+    .owl-dot
+      width: 13px
+      height: 13px
+      border-radius: 100%
+      border: 1px solid #ccc
+      background: #fff
+      top: 15px
+      margin-right: 5px
+      display: inline-block  /*for making them horizontal, if you want vertical then you can use- display: block*/
+      &.active
+        background: $btm_col
+  .owl-nav
+    div
+      width: 25px
+      height: 35px
+      background-image: url("images/responceArr.png")
+      top: 10px
+      position: absolute
+      &.owl-next
+        right: 0
+        background-position: top right
+.articles
+  margin: 30px 0
+  h2
+    text-align: center
+    text-transform: uppercase
+  .art-item
+    margin: 10px 0 30px 0
+    border-bottom: 3px solid $activ_col
+    p
+      font-size: 14px
+      font-family: 'Open Sans', sans-serif
+      padding: 8px 10px
+
+@import '_sidebar'
