@@ -5,8 +5,8 @@ mixin menu(items)
     ul.sf-menu
         each item in menuItem
             if item == menuItem[1]
-                li(class="active")
-                    a(href=item+".html") #{item}
+                li
+                    a(href="#" class="active") #{item}
                     .sf-mega
                         ul.mega-sub
                             each item in menuSubItem
@@ -14,13 +14,13 @@ mixin menu(items)
 
             else if item == menuItem[2]
                 li
-                    a(href=item+".html") #{item}
+                    a(href="#") #{item}
                     .sf-mega
                         ul.mega-sub
                             each item in menuSubItem
                                 li: a(href="#") #{item}
             else
-                li: a(href=item+".html") #{item}
+                li: a(href="#") #{item}
 
 mixin top_tel()
     ul.top-tel

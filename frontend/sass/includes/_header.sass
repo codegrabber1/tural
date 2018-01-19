@@ -1,5 +1,4 @@
 header
-  border: 1px solid green
   display: block
 //.top-slider
   //position: absolute
@@ -18,10 +17,8 @@ header
   //position: relative
   //z-index: 1
 .header-content
-  border: 0 solid red
   overflow: hidden
   height: 100%
-
 .top-header
   background-color:  rgba(0, 0, 0, 0.5)
   color: $invert_col
@@ -42,7 +39,7 @@ header
       color: #fff
       font-size: 12px
       text-decoration: underline
-      font-family: 'Open Sans', sans-serif
+      @include font('Open Sans')
       font-weight: 400
       display: block
       margin: 5px 0 0 15px
@@ -50,7 +47,7 @@ header
     margin-left: 40px
   .top-kurs
     color: $activ_col
-    font-family: 'Open Sans', sans-serif
+    @include font('Open Sans')
     font-weight: 400
     font-size: 16px
     margin: 10px 0 0
@@ -62,14 +59,70 @@ header
       img
         margin: 0 auto
   .top-enter
-    font-family: 'Open Sans', sans-serif
+    @include font('Open Sans')
     font-weight: 400
     font-size: 12px
     margin: 10px 0 0
     float: right
+    .top-searchIcon
+      float: left
+      width: 70%
+      img
+        width: 30px
+        float: right
+        cursor: pointer
     a
       display: block
       float: right
+.top-search
+  position: fixed
+  width: 100%
+  height: 100%
+  right: 0
+  top: 0
+  background-color: rgba(0,0,0,.8)
+  z-index: 150
+  display: none
+  .close
+    width: 38px
+    height: 33px
+    cursor: pointer
+    opacity: .5
+    float: right
+    margin: 10px 0
+    background: url("images/srch-cross.png")
+    &:hover
+      opacity: 1
+
+  .src-form
+    width: 90%
+    margin: 130px auto
+    border: 0 solid red
+    z-index: 1000
+    input[type="seacrh"],
+    input[type="submit"]
+      border: none
+      width: 100%
+      background: none
+      padding: 6px 0
+      @include font("Open Sans")
+    input[type="seacrh"]
+      color: #fff
+      font-size: 20px
+      border-bottom: 1px solid $activ_col
+    input[type="seacrh"]
+      @include placeholder
+        color: #fff
+        font-size: 30px
+    input[type="submit"]
+      border: 1px solid $activ_col
+      font-size: 30px
+      border-radius: 3px
+      color: $activ_col
+    .src-img
+      width: 100%
+      img
+        margin: 80px auto
 
 
 .header-logo
@@ -80,36 +133,59 @@ header
   img
     margin: 0 auto
   h1
-    font-size: 24px
+    font-size: 30px
     text-transform: uppercase
+    font-weight: 700
     color: $invert_col
-    font-family: 'Open Sans', sans-serif
+    @include font('Open Sans')
 .choosevocation
   background-color:  rgba(0, 0, 0, 0.5)
   margin: 20px auto
   width: 90%
+  padding: 4px 0 0
   .form-group
     float: left
     overflow: hidden
     width: auto
-    margin-right: 10px
+    margin-right: 18px
     margin-bottom: 0
-    label
-      display: block
-      margin: 0
-      padding: 0
-      color: $invert_col
-      text-transform: uppercase
-      font-weight: 400
-      font-size: 18px
-      position: relative
-      //background: url('images/form-icons.png') 0 0
-      &.small
-        font-size: 14px
-        font-family: 'Open Sans', sans-serif
-        margin-top: 6px
+  label
+    display: block
+    margin: 0
+    padding: 5px 9px 0 0
+    color: $invert_col
+    text-transform: uppercase
+    font-weight: 400
+    font-size: 18px
+    position: relative
+    &.curort
+      text-align: right
+      background: url("images/vform-icons.png") no-repeat
+      background-position: 0 0
+    &.hotel
+      text-align: right
+      background: url("images/vform-icons.png") no-repeat
+      background-position: 0 -35px
+    &.checkin
+      text-align: right
+      background: url("images/vform-icons.png") no-repeat
+      background-position: -3px -60px
+      background-size: 35px
+    &.departure
+      text-align: right
+      background: url("images/vform-icons.png") no-repeat
+      background-position: 0 -88px
+      background-size: 35px
+    &.small
+      font-size: 13px
+      padding: 3px 0
+      text-align: center
+      @include font('Open Sans')
+      margin-top: 6px
   input[type="text"]
-    margin: 0 auto
+    margin: 4px auto
+    width: 100%
+    border-radius: 6px
   input[type="image"]
-    margin: 20px 0 0 20px
+    margin: 20px 0 0 10px
 

@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+
     // top menu
 
     $(".sf-menu").superfish({
@@ -30,7 +31,10 @@ jQuery(document).ready(function($){
         return false;
     });
 // end top menu
-// tabs
+// card datepicker
+    $( "#datepicker" ).datepicker();
+
+// indextabs
     $('.proposeSliderTabs .tab').click(function(){
         $('.proposeSliderTabs .tab').removeClass('active')
             .eq($(this).index()).addClass('active');
@@ -42,6 +46,22 @@ jQuery(document).ready(function($){
             .eq($(this).index()).addClass('active');
         $('.tab-item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');
+
+// card Tabs
+    $('#cardTabs .tab').click(function(){
+        $('#cardTabs .tab').removeClass('active')
+            .eq($(this).index()).addClass('active');
+        $('.tab-item').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('active');
+
+// // card Tabs
+    $('#dopinfo .left-tab').click(function(){
+        $('#dopinfo .left-tab').removeClass('active')
+            .eq($(this).index()).addClass('active');
+        $('.right-item').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('active');
+
+
 // scrollTo Top
     $('#top').on('click', function() {
         $("body, html").animate({
@@ -65,12 +85,16 @@ jQuery(document).ready(function($){
         responsive:{
             0:{
                 items:1,
-                nav:true,
+                nav: true,
                 autoplayTimeout: 2000
             },
             600:{
-                items:3,
-                nav:false
+                items:2,
+                nav: true
+            },
+            768:{
+                items:2,
+                nav: true
             },
             1000:{
                 items:3,
@@ -134,7 +158,33 @@ jQuery(document).ready(function($){
             }
         }
     });
+// Main News
+    $("#mainNews1").owlCarousel({
+        pagination: true,
+        margin: 10,
+        center: false,
+        autoplayTimeout: 2000,
+        autoplay: false,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop: true,
 
+            }
+        }
+    });
 // Main responce
     $("#response").owlCarousel({
         items: 2,
@@ -176,7 +226,45 @@ jQuery(document).ready(function($){
         navText: ""
 
     });
+// Card Slider
+    $("#cardslider").owlCarousel({
+        nav: true,
+        margin: 20,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items: 3,
+                nav: true
+            },
+            992:{
+                items: 3 ,
+                nav: true
+
+            },
+            1000:{
+                items: 4,
+                nav: true,
+                loop: true
+
+            }
+        }
+    });
+// Open search panel
+    $(".top-searchIcon > img").click(function () {
+        $(".top-search").fadeIn(600);
+
+    });
+// Close search panel
+    $(".close").click(function () {
+        $(".top-search").fadeOut(600);
+    });
 });// end ready
 $(document).on('click', '.yamm .dropdown-menu', function(e) {
     e.stopPropagation()
-})
+});

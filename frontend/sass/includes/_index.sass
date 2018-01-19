@@ -4,45 +4,103 @@
   @import "tabs"
 .ourTours
   background-color: $contentbg_col
-  border: 1px solid red
   margin-top: 20px
-  h4
+  h3
     text-align: center
     text-transform: uppercase
+    width: 100%
+    @include font("Roboto")
+    font-weight: 700
+    color: $btm_col
+    margin: 30px 0 0 0
+    font-size: 22px
   .cat-container
-    //display: flex
-    border: 1px solid red
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 25px
+    padding: 0
   .cat-pict
-    display: inline-block
+    position: relative
+    overflow: hidden
+    img
+      //&:hover
+      //  -webkit-transform: scale(-.8)
+      //  -moz-transform: scale(.2)
+      //  -ms-transform: scale(.2)
+      //  -o-transform: scale(.2)
+      //  transform: scale(.8)
+    p
+      background-color: #fff
+      padding: 10px
+      margin: 0
+      text-align: center
+      @include font('abosanova')
+      font-weight: bold
+      font-size: 12px
+      border-top: 3px solid $btm_col
+    &:nth-child(1)
+      grid-column: 1/3
+    &:nth-child(10)
+      grid-column: 3/5
+  .descr
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: url("images/baketsfor-tur.png") rgba(0,0,0,.5) no-repeat
+    background-position: center center
+    color: #fff
+    opacity: 0
+    transform: translateY(-30px)
+    -webkit-transition: all .25s
+    -o-transition: all .25s
+    transition: all .25s
+    overflow: hidden
+    p
+      background-color: $btm_col
+      display: block
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        border: 15px solid transparent
+        border-top: 15px solid $btm_col
+        left: 50%
+        margin-left: -12px
+        bottom: -30px
+        width: 0
+  .cat-pict:hover .descr
+    opacity: 1
+    -webkit-transform: translateY(0)
+    -moz-transform: translateY(0)
+    -ms-transform: translateY(0)
+    -o-transform: translateY(0)
+    transform: translateY(0)
 
-    //flex-shrink: 3
-    //padding: 0 15px
-    &:first-child,
-    &:last-child
-      padding: 0
-      //flex-shrink: 1
 .mainNews
   width: 100%
   background: url("images/mainsrticle-bg.jpg") center center no-repeat
   -webkit-background-size: cover
   background-size: cover
   position: relative
-  min-height: 400px
   height: 100%
+  padding-bottom: 30px
   @import "tabs"
 
 .testimonials
-  border: 1px solid red
   padding: 20px 0
   h3
     text-align: center
     color: $btm_col
     text-transform: uppercase
+    font-size: 22px
+    margin: 30px 0
   .testimonials-block
     .item
       border-top: 3px solid $btm_col
       padding-top: 10px
-      h3
+      .resp-title
         width: 100%
         text-align: center
         color: #000
@@ -67,15 +125,15 @@
         background: #fff
         top: 15px
         margin-right: 5px
-        display: inline-block  /*for making them horizontal, if you want vertical then you can use- display: block*/
+        display: inline-block
         &.active
           background: $btm_col
     .owl-nav
       div
-        width: 25px
+        width: 17px
         height: 35px
         background-image: url("images/responceArr.png")
-        top: 10px
+        top: 8px
         position: absolute
         &.owl-next
           right: 0

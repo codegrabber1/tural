@@ -28,11 +28,19 @@ aside
 .reltours
   margin: 100px 0
 .reltours
+  h3
+    text-align: center
+    color: $btm_col
+    text-transform: uppercase
+    font-size: 22px
+    margin: 30px 0
+    text-shadow: 1px 0 1px rgba(0,0,0,.5)
   .item
     border-top: 3px solid $btm_col
     p
       text-align: center
       margin: 10px 0
+      @include font('abosanova')
     img
       margin: 15px 0
   .owl-dots
@@ -47,15 +55,15 @@ aside
       background: #fff
       top: 15px
       margin-right: 5px
-      display: inline-block  /*for making them horizontal, if you want vertical then you can use- display: block*/
+      display: inline-block
       &.active
         background: $btm_col
   .owl-nav
     div
-      width: 25px
-      height: 35px
+      width: 15px
+      height: 33px
       background-image: url("images/responceArr.png")
-      top: 10px
+      top: 7px
       position: absolute
       &.owl-next
         right: 0
@@ -68,9 +76,214 @@ aside
   .art-item
     margin: 10px 0 30px 0
     border-bottom: 3px solid $activ_col
-    p
-      font-size: 14px
-      font-family: 'Open Sans', sans-serif
-      padding: 8px 10px
+    position: relative
+    .holder
+      position: relative
+      img
+        margin: 0 auto
+      .captholder
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        background: rgba(0,0,0,.8)
+        p
+          color: #fff
 
+          float: left
+          font-size: 18px
+          margin: 2px 17px
+          line-height: 40px
+          text-transform: uppercase
+    .decript-item
+      position: relative
+      overflow: hidden
+      p
+        font-size: 14px
+        font-family: 'Open Sans', sans-serif
+        padding: 8px 10px
+      .decript-link
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        transform: translateY(30px)
+        -webkit-transition: all .25s
+        -o-transition: all .25s
+        transition: all .25s
+        background-color: $activ_col
+        a
+          margin: 25px
+          padding: 3px 20px
+          display: block
+          text-align: center
+          border: 1px solid #fff
+          border-radius: 3px
+          color: #fff
+          float: right
+          &:hover
+            text-decoration: none
+    .decript-item:hover .decript-link
+      opacity: 1
+      transform: translateY(0)
+#cardTabs
+  border-top: 5px $activ_col solid
+  border-bottom: 1px solid #9a9a9a
+  .tabs
+    margin: 0
+    border-bottom: 3px $activ_col solid
+    .spantabs
+      width: 92%
+      margin: 0 auto
+    .tab
+      display: block
+      float: left
+      text-align: center
+      position: relative
+      padding: 13px 28px
+      a
+        color: $font_col
+        text-transform: uppercase
+        text-decoration: none
+        @include font('Open Sans')
+      &.active,
+      &:hover
+        a
+          color: $activ_col
+          font-weight: bold
+          text-transform: uppercase
+        &:after
+          content: ''
+          position: absolute
+          border: 8px solid transparent
+          border-top: 8px solid $activ_col
+          left: 50%
+          margin-left: -12px
+          top: 0
+          width: 0
+  .tab-item
+    overflow: hidden
+    display: none
+    background-color: $cardtabs_col
+    &:first-child
+      display: block
+    .topinfo
+      border-bottom: 1px solid #0f0f0f
+    .infotur,
+    .infoblock
+      width: 50%
+    .infotur
+      float: left
+    .info-items
+      border-bottom: 1px solid
+      &:last-child
+        border-bottom: none
+      .info-name,
+      .item-info
+        display: table-cell
+        padding: 4px 0
+        font-size: 18px
+      .info-name
+        @include font("Roboto")
+        font-weight: bold
+        width: 195px
+      .item-info
+        @include font("Open Sans")
+        width: 175px
+        .infoCal
+          border: 1px solid #9a9a9a
+          border-radius: 7px
+          width: 100%
+          .fa
+            color: $activ_col
+          input[type="text"]
+            width: 90%
+            border: none
+            background: $cardtabs_col
+            padding: 2px 0 0 10px
+      img
+        float: left
+        max-width: 656px
+        width: 100%
+    .infoblock
+      float: right
+      .priceblock
+        position: absolute
+        top: 140px
+        @include font("Open Sans")
+        .price
+          color: $activ_col
+          font-size: 30px
+          text-align: center
+          border-bottom: 2px solid $activ_col
+          padding-bottom: 20px
+        a
+          display: block
+          background-color: $btm_col
+          color: #ffffff
+          border-radius: 6px
+          padding: 8px
+          text-align: center
+          text-transform: uppercase
+          margin-top: 30px
+          &:hover
+            text-decoration: none
+
+#dopinfo
+  width: 100%
+  @include font("Open Sans")
+  .leftSide
+    float: left
+    width: 18%
+    span.left-tab
+      display: block
+      padding: 10px 10px
+      background-color: #fff
+      cursor: pointer
+      font-size: 18px
+      border-bottom: 1px solid #9a9a9a
+      &:last-child
+        border-bottom: none
+      &.active
+        border-left: 4px solid $activ_col
+        background-color: $cardtabs_col
+  .rightSide
+    float: right
+    width: 82%
+    padding: 10px 20px
+    font-size: 14px
+    .right-item
+      display: none
+      &:first-child
+        display: block
+
+
+.tourdescription
+  @include font("Open Sans")
+  font-size: 18px
+  p,
+  ul
+    margin: 0 10px
+  .desctitle
+    text-align: center
+    color: $activ_col
+    font-weight: bold
+    line-height: 24px
+    margin: 40px 0 30px 0
+    span
+      display: block
+#cardslider
+  margin: 30px 0
+  .owl-nav
+    div
+      width: 25px
+      height: 35px
+      background-image: url("images/proposeArrows.png")
+      top: 30%
+      position: absolute
+      &.owl-next
+        right: 0
+        background-position: top right
 @import '_sidebar'

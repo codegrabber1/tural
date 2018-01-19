@@ -35,6 +35,14 @@ nav
           display: block
           a
             color: $invert_col
+            font-weight: normal
+            margin: 0
+            padding: 0
+            &:before
+              content: "\f105"
+              font-family: FontAwesome
+              float: left
+              margin-right: 10px
             &:hover
               color: $activ_col
     li
@@ -44,19 +52,22 @@ nav
       font-weight: bold
       &:hover
         background:  $activ_col
+
       > a
-        text-decoration: none
-        color: $font_col
-        font-size: 14px
-        border: none
-        display: block
-        position: relative
-        &:hover
           text-decoration: none
-          color: $invert_col
-          font-weight: bold
-
-
+          color: $font_col
+          font-size: 14px
+          border: none
+          display: block
+          position: relative
+          margin: 2px 0 0 0
+          &:hover
+            text-decoration: none
+            color: $invert_col
+            font-weight: bold
+          &.active
+            border-top: 2px solid $activ_col
+            margin: 0
     > li
       > ul
         width: 200px
@@ -71,33 +82,36 @@ nav
             &:hover
               color: $activ_col
 
-  .toggle-mnu
+.toggle-mnu
+  display: block
+  width: 45px
+  height: 33px
+  margin-top: 14px
+  float: left
+  border-radius: 5px
+  padding: 6px 8px
+  background: $btm_col
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+  span:after
+    top: 18px
+  span
+    position: relative
     display: block
-    width: 28px
-    height: 28px
-    margin-top: 14px
-    float: left
-    span:after, span:before
-      content: ""
-      position: absolute
-      left: 0
-      top: 9px
-    span:after
-      top: 18px
-    span
-      position: relative
-      display: block
-    span, span:after, span:before
-      width: 100%
-      height: 2px
-      background-color: $activ_col
-      transition: all 0.3s
-      backface-visibility: hidden
-      border-radius: 2px
-    &.on span
-      background-color: transparent
-    &.on span:before
-      transform: rotate(45deg) translate(-1px, 0px)
+  span, span:after, span:before
+    width: 100%
+    height: 3px
+    background-color: $invert_col
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+  &.on span
+    background-color: transparent
+  &.on span:before
+    transform: rotate(45deg) translate(-1px, 0px)
 
-    &.on span:after
-      transform: rotate(-45deg) translate(6px, -7px)
+  &.on span:after
+    transform: rotate(-45deg) translate(6px, -7px)
