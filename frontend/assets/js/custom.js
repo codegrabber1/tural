@@ -370,7 +370,12 @@ jQuery(document).ready(function($){
         target: '+=1'
     });
 
-
+// lazyLoad
+    $(".art-item").slice(0,6).show();
+    $("#button-more").click(function(e){
+        e.preventDefault();
+        $('.art-item:hidden').slice(0,6).slideDown();
+    });
 });// end ready
 $(document).on('click', '.yamm .dropdown-menu', function(e) {
     e.stopPropagation()

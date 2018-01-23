@@ -105,9 +105,13 @@ header {
   background: #6585ff;
   padding: 8px 10px;
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans", sans-serif; }
   .formbtn a {
-    color: #ffff00;
+    color: #fff;
     text-decoration: none; }
 
 .header-content {
@@ -1086,6 +1090,7 @@ aside {
     text-align: center;
     text-transform: uppercase; }
   .articles .art-item {
+    display: none;
     margin: 10px 0 30px 0;
     border-bottom: 3px solid #fa7b0a;
     position: relative; }
@@ -1139,10 +1144,18 @@ aside {
     .articles .art-item .decript-item:hover .decript-link {
       opacity: 1;
       transform: translateY(0); }
-  .articles #loading {
-    display: none; }
-  .articles #button-more {
-    cursor: pointer; }
+
+#button-more {
+  cursor: pointer;
+  width: 18%;
+  margin: 0 auto;
+  font-family: "Opem Sans", sans-serif;
+  font-size: 18px; }
+  #button-more img {
+    float: left; }
+  #button-more p {
+    padding: 20px 0 0 0;
+    float: right; }
 
 #cardTabs {
   border-top: 5px #fa7b0a solid;
@@ -1542,6 +1555,12 @@ footer {
     width: 70%; }
   #passport {
     bottom: -90px; }
+  aside .prod_slider #block_arrows .prev {
+    top: -8%;
+    right: 5%; }
+  aside .prod_slider #block_arrows .next {
+    bottom: 100%;
+    right: 0; }
   .subfooter .fooClass {
     margin: 0 0 20px 0; }
     .subfooter .fooClass:after {

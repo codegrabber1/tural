@@ -136,6 +136,7 @@ aside
     text-align: center
     text-transform: uppercase
   .art-item
+    display: none
     margin: 10px 0 30px 0
     border-bottom: 3px solid $activ_col
     position: relative
@@ -190,10 +191,17 @@ aside
     .decript-item:hover .decript-link
       opacity: 1
       transform: translateY(0)
-  #loading
-    display: none
-  #button-more
-    cursor: pointer
+#button-more
+  cursor: pointer
+  width: 18%
+  margin: 0 auto
+  @include font("Opem Sans")
+  font-size: 18px
+  img
+    float: left
+  p
+    padding: 20px 0 0 0
+    float: right
 #cardTabs
   border-top: 5px $activ_col solid
   border-bottom: 1px solid #9a9a9a
