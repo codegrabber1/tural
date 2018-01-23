@@ -43,11 +43,9 @@ section
   display: block
 .wrrap
   width: 100%
-#top
+#top,
+#btn-connect
   position: absolute
-  bottom: 7%
-  right: 10%
-  font-size: 45px
   cursor: pointer
   color: $invert_col
   width: 70px
@@ -55,3 +53,12 @@ section
   text-align: center
   border-radius: 50%
   background-color: $btm_col
+#top
+  bottom: 7%
+  right: 10%
+  font-size: 45px
+#btn-connect
+  top: 0
+  left: 0
+  padding: 15px 0
+  @include font("Roboto")

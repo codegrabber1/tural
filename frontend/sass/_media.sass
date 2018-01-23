@@ -1,26 +1,84 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1920px)
+  .carousel-control.left
+    left: -4%
+    top:  40%
+    background: url("images/topSliderarr.png") 123px 0 no-repeat
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
   .sf-menu a
   //padding: .75em .8em
   .top-header .top-tel
     margin-left: 30px
+  .choosevocation
+    width: 100%
+  .choosevocation .form-group
+    margin-right: 4px
 @media only screen and (max-width: 1024px)
+  #topSlider
+    height: 470px
+  .carousel-control.left
+    background: url("images/topSliderarr.png") 87px 0 no-repeat !important
+  #topSlider .full-screen
+    background-size: cover
+    -webkit-background-size: cover
+  .choosevocation
+    margin: 50px auto
+  #passport
+    bottom: -40px
+  .proposeSlider .proposeSliderTabs .tabs
+    width: 60%
+  .proposeSlider .proposeSliderTabs .tab_item .item .decr-item .descr-link a
+    padding: 3px 10px
   .sf-menu a
     padding: .75em .8em !important
   .sf-arrows .sf-with-ul
     padding-right: 2em !important
   .topmainslider
     height: 75vh
-
+  .subfooter .sub-form .form-sub input[type="text"]
+    width: 60%
+  .subfooter .item-text
+    width: 81%
+  .subfooter li a, .subfooter .items
+    font-size: 15px
+  .ourTours .cat-container
+    grid-template-columns: repeat(3, 1fr)
+  .ourTours  .cat-pict
+    img
+      width: 100%
+      margin: 0 auto
+  .ourTours  .cat-pict
+    &:nth-child(1)
+      grid-column: 1/3 !important
+    &:nth-child(10)
+      //width: 100%
+      grid-column: 1/4 !important
+  #cardTabs .tabs .tab
+    padding: 13px 18px !important
+  #cardTabs .tab-item .info-items .item-info,
+  #cardTabs .tab-item .info-items .info-name
+    font-size: 14px
+  #cardTabs .tab-item .infoblock .priceblock
+    top: 101px
+  #dopinfo .leftSide span.left-tab
+    font-size: 16px
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
+  #topSlider
+    overflow: hidden
+
+    .full-screen
+      background-size: cover !important
+      -webkit-background-size: cover !important
   .top-header .top-enter .top-searchIcon
     width: 40%
     margin-right: 10px
     img
       float: none
       width: auto
+  .carousel-control.left
+    background: url("images/topSliderarr.png") 79px 0 no-repeat !important
   nav
     background: none
     float: left
@@ -29,9 +87,57 @@
 
   .sf-menu
     display: none !important
-  .choosevocation .form-group
+  .choosevocation
+    margin: 0 auto
+  .choosevocation .fist
+    .form-group
+      width: 50%
+      margin: 0
+  .choosevocation
+    input[type="text"]
+      width: 95%
+  .proposeSlider .proposeSliderTabs .tabs
+    width: 70%
+  #passport
+    bottom: -90px
+  .subfooter
+    .fooClass
 
+      margin: 0 0 20px 0
+      &:after
+        content: "."
+        display: block
+        height: 0
+        clear: both
+        visibility: hidden
+    .list-link
+      width: 100%
+  #cardTabs .tabs .spantabs
+    width: 100%
+  #cardTabs .tabs .tab
+    padding: 13px 9px !important
 
+  #cardTabs .tab-item .infotur
+    float: none
+    img
+      margin: 0 auto
+      width: 100%
+  #cardTabs .tab-item .infotur,
+  #cardTabs .tab-item .infoblock
+    width: 100%
+  #cardTabs .tab-item .infoblock .priceblock
+    top: 80px
+    left: 50px
+  #dopinfo .leftSide
+    width: 35%
+  #dopinfo .rightSide
+    width: 60%
+  aside .prod_slider #slideimg .jc-items
+    width: 2000em
+    height: auto
+    .cat-pict
+      float: left
+      margin-right: 15px
 @media only screen and (max-width: 768px)
   .top-header
     font-size: 22px
@@ -46,11 +152,36 @@
         margin: 0 0 0 15px
     .top-logo
       margin-bottom: 10px
+  .choosevocation
+    display: none
+    position: fixed
+    top: 50%
+    left: 10%
+    z-index: 5
+    width: 80%
+    background-color: rgba(0, 0, 0, 0.8)
+    .form-group
+      width: 32%
+  .carousel-control.left,
+  .carousel-control.right
+    top: 55%
+  .carousel-control.left
+    background: url("images/topSliderarr.png") 35px 0 no-repeat !important
 
-
+  .mainNews .mainNewsTabs .tab-item .item .short-text
+    font-size: 13px
+  #cardTabs .tab-item .infoblock .priceblock
+    position: initial
+    width: 60%
+    margin: 10px auto
+  #cardTabs .tabs .tab.active a,
+  #cardTabs .tabs .tab:hover a
+    font-size: 12px
   .footer-social,
   .footer-copy
     text-align: center
+  #btn-connect
+    left: 80%
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 667px)
   .proposeSlider .proposeSliderTabs .tabs
@@ -73,25 +204,69 @@
     grid-template-columns: repeat(2, 1fr)
   .ourTours  .cat-pict
     &:nth-child(1)
-      grid-column: 1/3
+      grid-column: 1/3!important
     &:nth-child(10)
-      grid-column: 1/3
+      grid-column: 1/3!important
+  #passport
+    bottom: -40px
+  .choosevocation .fist
+    .form-group
+      width: 100%
+  .carousel-control.left,
+  .carousel-control.right
+    top: 65%
+  .carousel-control.left
+    background: url("images/topSliderarr.png") -80% 0 no-repeat !important
+  .mainNews .mainNewsTabs .tab-item .item .short-text a
+    top: 93%
+  #cardTabs .tabs .tab
+    float: none
+    text-align: left
+    &.active,
+    &:hover
+       &:after
+          content: ''
+          position: absolute
+          border: 8px solid transparent
+          border-left: 10px solid $activ_col !important
+          left: 0
+          margin-left: -8px
+          top: 35%
+          width: 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px)
   .proposeSlider .proposeSliderTabs .tab_item .item .decr-item p
     padding: 23px 0 20px 15px
-
+  .mainNews .mainNewsTabs .tab-item .item .short-text
+    width: 80%
+  .carousel-control.left
+    background: url("images/topSliderarr.png") -50% 0 no-repeat !important
+  #dopinfo .leftSide,
+  #dopinfo .rightSide
+    width: 100%
+    float: none
+  #dopinfo .leftSide span.left-tab.active
+    border-left: none
+    border-bottom: 2px solid #fa7b0a
+  #dopinfo .rightSide .right-item
+    padding: 10px 0
+  .subfooter .sub-form
+    width: 90%
+    margin: 40px auto
 @media only screen and (max-width: 480px)
+  #topSlider
+    height: 500px
   .ourTours .cat-container
-    grid-template-columns: repeat(1, minmax(auto, 1fr))
+    grid-template-columns: repeat(2, 1fr)
   .ourTours  .cat-pict img
     width: 100%
     height: auto
   .ourTours  .cat-pict
     &:nth-child(1)
-      grid-column: 1/1
+      grid-column: 1/3 !important
     &:nth-child(10)
-      grid-column: 1/1
+      grid-column: 1/3
   .mainNews .mainNewsTabs .tabs
     width: 100%
   .testimonials .testimonials-block .item img
@@ -101,6 +276,27 @@
     margin-top: 0
   .testimonials .testimonials-block .item p
     margin: 20px 0
+  .choosevocation
+    width: 65%
+    .form-group
+      float: none
+      width: 100%
+      label
+        padding: 5px 20px 0 0
+  #passport
+    bottom: -2%
+  .carousel-control.left,
+  .carousel-control.right
+    top: 60%
+  .carousel-control.left
+    background: url("images/topSliderarr.png") -4% 0 no-repeat !important
+    left: 2%
+  .carousel-control.right
+    right: 2%
+  .mainNews .mainNewsTabs .tab-item .item .short-text
+    width: 70%
+  .mainNews .mainNewsTabs .tab-item .item .short-text a
+    top: 91%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 380px)
@@ -112,10 +308,29 @@
     top: 25% !important
   .proposeSlider .proposeSliderTabs .tab_item .item .decr-item p
     padding: 15px 0 8px 15px
+  #cardTabs .tab-item .info-items .info-name, #cardTabs .tab-item .info-items .item-info
+    display: initial
+  #cardTabs .tab-item .info-items
+    padding: 10px 0
+  .ourTours .cat-container
+    grid-template-columns: repeat(1, 1fr)
+  .ourTours  .cat-pict img
+    width: 100%
+    height: auto
+  .carousel-control
+    width: 18%!important
+  .carousel-control.left
+    background: url("images/topSliderarr.png") -1% 0 no-repeat !important
+  .ourTours  .cat-pict
+    &:nth-child(1)
+      grid-column: 1/1 !important
+    &:nth-child(10)
+      grid-column: 1/1 !important
 @media only screen and (max-width: 320px)
-  // .topmainslider,
-  // .main_slider img
-  //   height: 40vh
+  .carousel-control
+    width: 21%!important
+    .carousel-control.left
+      background: url("images/topSliderarr.png") 0 0 no-repeat !important
 
 
 /*==========  Mobile First Method  ==========*/

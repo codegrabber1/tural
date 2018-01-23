@@ -6,23 +6,35 @@ footer
   background-color: $subfooter_col
   .items
     margin: 0 0 10px 0
+    p
+      padding: 0 0 10px 0
+    span.day,
+    span.time
+      display: inline-block
+    span.day
+      width: 30%
   .item-icon,
   .item-text
     display: table-cell
     vertical-align: middle
+    width: 85%
   .item-icon
-    width: 50px
+    width: 40px
   .list-link
     width: 85%
     margin: 0 auto
+
+
   h3,
   .list-link li a
     font-family: 'Roboto', sans-serif
     font-weight: 400
     font-size: 18px
     text-transform: uppercase
-    margin-bottom: 10px
-  li a
+    margin: 0 0 10px 0
+    color: #000000
+  li a,
+  .items
     font-size: 16px
     font-family: 'Open Sans', sans-serif
     text-decoration: none
@@ -32,24 +44,26 @@ footer
   .list-link li a
     color: $activ_col
   .sub-form
-    margin-top: 30px
+    margin-top: 40px
     p
       font-family: 'Open Sans', sans-serif
       font-size: 16px
+      color: #000
     .form-sub
+      font-family: 'Open Sans', sans-serif
       margin: 30px 0
       border: 1px solid red
       input[type="text"],
       input[type="submit"]
-        border: 0 solid red
+        border: 0
         font-size: 12px
       input[type="text"]
         padding: 10px
-        margin-right: 5px
         background-color: $subfooter_col
-        width: 60%
+        width: 69%
       input[type="submit"]
         background-color: $btm_col
+        text-transform: uppercase
         -webkit-border-radius: 3px
         -moz-border-radius: 3px
         border-radius: 3px

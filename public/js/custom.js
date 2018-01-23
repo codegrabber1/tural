@@ -69,10 +69,28 @@ jQuery(document).ready(function($){
         }, 800); return false;
     });
 // headerBigSlider
-//     $("#topSlider").owlCarousel({
-//         items:1
-//
-//     });
+    var $item = $('.carousel .item');
+    var $wHeight = $("#topSlider").height();
+    var $wWidth = $(window).width();
+    $item.eq(0).addClass('active');
+    $item.height($wHeight);
+    $item.addClass('full-screen');
+
+    $('.carousel img').each(function() {
+        var $src = $(this).attr('src');
+        $(this).parent().css({
+            'background-image' : 'url(' + $src + ')',
+        });
+        $(this).remove();
+    });
+
+    $(window).on('resize', function (){
+        $wHeight = $(window).height();
+        $item.height($wHeight);
+    });
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    });
 // owlCarousel
     $("#owl-propose").owlCarousel({
         pagination: true,
@@ -131,8 +149,8 @@ jQuery(document).ready(function($){
             }
         }
     });
-// mainArticles
-    $("#mainArt").owlCarousel({
+// tabsCarousel
+    $("#owl-propose3").owlCarousel({
         pagination: true,
         margin: 10,
         center: false,
@@ -158,8 +176,8 @@ jQuery(document).ready(function($){
             }
         }
     });
-// Main News
-    $("#mainNews1").owlCarousel({
+// mainArticles
+    $("#mainArt").owlCarousel({
         pagination: true,
         margin: 10,
         center: false,
@@ -173,9 +191,45 @@ jQuery(document).ready(function($){
                 nav:true,
                 autoplayTimeout: 2000
             },
-            600:{
-                items:3,
-                nav:false
+            670:{
+                items:1,
+                nav: true
+            },
+            992:{
+                items:2,
+                nav: true
+            },
+            1000:{
+                items: 3,
+                nav:true,
+                loop: true,
+
+            }
+        }
+    });
+// Main News
+    $("#mainNews1").owlCarousel({
+        pagination: true,
+        margin: 10,
+        center: false,
+        autoplayTimeout: 2000,
+        autoplay: false,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: true,
+                autoplayTimeout: 2000
+            },
+
+            670:{
+                items: 1,
+                nav: true
+            },
+            992:{
+                items:2,
+                nav: true
             },
             1000:{
                 items:3,
@@ -226,6 +280,33 @@ jQuery(document).ready(function($){
         navText: ""
 
     });
+// Relatetd tours
+    $("#relpostart").owlCarousel({
+        items: 3,
+        nav: true,
+        margin: 20,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items: 2,
+                nav: true
+            },
+
+            1000:{
+                items: 3,
+                nav: true,
+                loop: true
+
+            }
+        }
+
+    });
 // Card Slider
     $("#cardslider").owlCarousel({
         nav: true,
@@ -257,13 +338,39 @@ jQuery(document).ready(function($){
     });
 // Open search panel
     $(".top-searchIcon > img").click(function () {
-        $(".top-search").fadeIn(600);
+        $(".top-search").fadeIn(300);
 
     });
 // Close search panel
     $(".close").click(function () {
-        $(".top-search").fadeOut(600);
+        $(".top-search").fadeOut(300);
     });
+// form button
+    $("#formbtn").click(function(){
+        $(".choosevocation").fadeIn(300);
+    });
+    $(".close").click(function () {
+        $(".choosevocation").fadeOut(300);
+    });
+// vertical carousel on sidebar
+
+    $('#slideimg').jcarousel( {
+        // vertical: true,
+        wrap: 'circular',
+        animation: 'slow',
+    }).jcarouselAutoscroll({
+        interval: 3000,
+        target: '+=1',
+        autostart: true
+    });
+    $('.prev').jcarouselControl({
+        target: '-=1'
+    });
+    $('.next').jcarouselControl({
+        target: '+=1'
+    });
+
+
 });// end ready
 $(document).on('click', '.yamm .dropdown-menu', function(e) {
     e.stopPropagation()

@@ -40,7 +40,7 @@ aside
     p
       text-align: center
       margin: 10px 0
-      @include font('informCTT')
+      @include font('abosanova')
     img
       margin: 15px 0
   .owl-dots
@@ -69,67 +69,7 @@ aside
         right: 0
         background-position: top right
 .related-posts
-    .imgHold
-      position: relative
-      .capt
-        position: absolute
-        bottom: 0
-        left: 0
-        width: 100%
-        background: rgba(0,0,0,.5)
-        p
-          color: #fff
-          float: left
-          font-size: 14px
-          margin: 2px 17px
-          line-height: 40px
-          display: block
-          &.capt-price
-            float: right
-            a
-              border-radius: 5px
-              border: 1px solid #fa7b0a
-              padding: 5px 15px
-              font-weight: bold
-              margin-right: 5px
-              color: $activ_col
-              &:hover
-                text-decoration: none
-    .decr-item
-      position: relative
-      overflow: hidden
-      p
-        padding: 15px 0 8px 15px
-      .descr-link
-        position: absolute
-        bottom: 0
-        left: 0
-        width: 100%
-        height: 100%
-        opacity: 0
-        transform: translateY(30px)
-        -webkit-transition: all .25s
-        -o-transition: all .25s
-        transition: all .25s
-        background-color: $activ_col
-        a
-          margin: 20px
-          padding: 3px 20px
-          float: left
-          display: block
-          text-align: center
-          border: 1px solid #fff
-          border-radius: 3px
-          color: #fff
-          &:last-child
-            float: right
-          &:hover
-            text-decoration: none
-
-
-      .decr-item:hover .descr-link
-        opacity: 1
-        transform: translateY(0)
+		
 .articles
   margin: 30px 0
   h2
@@ -190,10 +130,6 @@ aside
     .decript-item:hover .decript-link
       opacity: 1
       transform: translateY(0)
-  #loading
-    display: none
-  #button-more
-    cursor: pointer
 #cardTabs
   border-top: 5px $activ_col solid
   border-bottom: 1px solid #9a9a9a
@@ -268,8 +204,7 @@ aside
             width: 90%
             border: none
             background: $cardtabs_col
-            padding: 2px 0
-            margin: 0 0 0 3px
+            padding: 2px 0 0 10px
       img
         float: left
         max-width: 656px

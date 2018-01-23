@@ -33,7 +33,7 @@ block content
                                    .infotur.clearfix
                                        img(src="images/cardtabspict.jpg")
                                    .infoblock.clearfix
-                                       .col-xs-12.col-sm-8.col-md-8
+                                       .col-md-8
                                            .info-items.clearfix
                                                .info-name
                                                    | Выезд
@@ -69,7 +69,7 @@ block content
                                                    | Маршрут
                                                .item-info
 
-                                       .col-xs-12.col-sm-4.col-md-4
+                                       .col-md-4
                                            .priceblock
                                                .price
                                                     | $1450.00

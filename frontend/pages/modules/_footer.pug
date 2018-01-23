@@ -1,33 +1,34 @@
 .subfooter
     .container
         .row
-            .col-xs-12.col-sm-6.col-md-3
-                h3 Агенствам
-                ul
-                    li
-                        a(href="#") Регистрация
-                    li
-                        a(href="#") Договора и документы
-                    li
-                        a(href="#") Рекламные туры
-                    li
-                        a(href="#") Акции от «Турал
-                    li
-                        a(href="#") Правила оплаты
-                    li
-                        a(href="#") О компании "Турал"
-            .col-xs-12.col-sm-6.col-md-3
-                h3 Направления
-                ul
-                    li
-                        a(href="#") Болгария
-                    li
-                        a(href="#") Черногория
-                    li
-                        a(href="#") Греция
-                    li
-                        a(href="#") Украина
-            .col-xs-12.col-sm-6.col-md-3
+            .fooClass
+                .col-xs-12.col-sm-6.col-md-3
+                    h3 Агенствам
+                    ul
+                        li
+                            a(href="#") Регистрация
+                        li
+                            a(href="#") Договора и документы
+                        li
+                            a(href="#") Рекламные туры
+                        li
+                            a(href="#") Акции от «Турал
+                        li
+                            a(href="#") Правила оплаты
+                        li
+                            a(href="#") О компании "Турал"
+                .col-xs-12.col-sm-6.col-md-2
+                    h3 Направления
+                    ul
+                        li
+                            a(href="#") Болгария
+                        li
+                            a(href="#") Черногория
+                        li
+                            a(href="#") Греция
+                        li
+                            a(href="#") Украина
+            .col-xs-12.col-sm-6.col-md-4
                 ul.list-link
                     li
                        a(href="") поиск тура
@@ -61,14 +62,21 @@
                         | tural@ukr.net
                 .items.clearfix
                     .item-icon
-                        | Пн-Сб
+
                     .item-text
-                        | с 8.00 до 20.00
+                        p.clearfix График работы:
+                        span.day
+                           | Пн-Сб:
+                        span
+                           | с 8.00 до 20.00
                 .items.clearfix
                     .item-icon
-                        | Вс
+                        |
                     .item-text
-                        | с 9.00 до 18.00
+                        span.day
+                            | Вс:
+                        span.time
+                            | с 9.00 до 18.00
 
 .bmfooter
     .container
