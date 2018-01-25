@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
   <head>
-    <link href="libs/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +15,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/megafish.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"><!-- [if lt IE 9]>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"><!-- [if gte IE 8]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
     <title>Головна сторінка
@@ -26,133 +26,136 @@
     <div class="wrrap">
       <header>
         <div class="top-slider clearfix">
+          <div class="topSliderControl clearfix"><a class="right " href="#topSlider" data-slide="prev"></a><a class="left " href="#topSlider" data-slide="next"></a></div>
           <div class="carousel slide" id="topSlider" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="item active"><img src="images/1.jpg" alt="First Image"></div>
+              <div class="item active"><img src="images/slider1.jpg" alt="First Image"></div>
+              <div class="item"><img src="images/1.jpg" alt="First Image"></div>
               <div class="item"><img src="images/slider1.jpg" alt="First Image"></div>
-              <div class="item"><img src="images/slider1.jpg" alt="First Image"></div>
-            </div><a class="left carousel-control" href="#topSlider" data-slide="prev"></a><a class="right carousel-control" href="#topSlider" data-slide="next"></a>
+            </div>
           </div>
           <div class="topFoo clearfix">
-            <div class="container">
+            <div id="head">
               <div class="row">
-                <div class="col-xs-12">
-                  <div class="header-content clearfix">
-                    <div class="top-header clearfix">
-                      <div class="col-xs-8 col-sm-4 col-md-3">
-                                <ul class="top-tel">
-                                  <li>(050) 486-42-14</li>
-                                  <li>(067) 741-74-11</li>
-                                </ul>
-                        <div class="call-form clearfix"><img src="images/viber_white.png"><a href="#">Обратний звонок</a></div>
-                      </div>
-                      <div class="col-xs-4 col-sm-3 col-sm-push-5 col-md-3 col-md-push-6">
-                        <div class="top-enter clearfix">
-                          <p class="hidden-xs hidden-sm">Вход в личный кабинет</p>
-                          <div class="top-searchIcon clearfix"><img src="images/small-search.png"></div>
-                          <div class="top-search clearfix">
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-xs-12">
-                                  <div class="close"></div>
-                                  <div class="src-form clearfix">
-                                    <form method="post">
-                                      <div class="col-md-10 seacrh">
-                                        <input type="seacrh" name="search" placeholder="Поиск...">
-                                      </div>
-                                      <div class="col-md-2 seacrh">
-                                        <input type="submit" value="Найти">
-                                      </div>
-                                    </form>
-                                    <div class="src-img clearfix"><img src="images/scr-palma.png" alt="alt"></div>
+                <div class="top-header clearfix">
+                  <div class="col-xs-8 col-sm-4 col-md-3">
+                            <ul class="top-tel">
+                              <li>(050) 486-42-14</li>
+                              <li>(067) 741-74-11</li>
+                            </ul>
+                    <div class="call-form clearfix"><img src="images/viber_white.png"><a href="#">Обратний звонок</a></div>
+                  </div>
+                  <div class="col-xs-4 col-sm-3 col-sm-push-5 col-md-3 col-md-push-6">
+                    <div class="top-enter clearfix">
+                      <p class="hidden-xs hidden-sm">Вход в личный кабинет</p>
+                      <div class="top-searchIcon clearfix"><img src="images/small-search.png"></div>
+                      <div class="top-search clearfix">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="close"></div>
+                              <div class="src-form clearfix">
+                                <form method="post">
+                                  <div class="col-md-10 seacrh">
+                                    <input type="seacrh" name="search" placeholder="Поиск...">
                                   </div>
-                                </div>
+                                  <div class="col-md-2 seacrh">
+                                    <input type="submit" value="Найти">
+                                  </div>
+                                </form>
+                                <div class="src-img clearfix"><img src="images/scr-palma.png" alt="alt"></div>
                               </div>
                             </div>
-                          </div><a href="#" title="Вход в личный кабинет"><img src="images/enter-icon.png"></a>
+                          </div>
+                        </div>
+                      </div><a href="#" title="Вход в личный кабинет"><img src="images/enter-icon.png"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-5 col-sm-pull-3 col-md-6 col-md-pull-3">
+                    <div class="top-kurs">
+                      <p>Курс валют: 22.11.17$ = 27.02 грн € = 31.66 грн  Р = 0.46 грн</p>
+                    </div>
+                    <div class="top-logo"><a href="index.html"><img src="images/top-logo.png" alt="Tural"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="header-content clearfix">
+                  <div class="menu-wrap clearfix">
+                    <nav class="clearfix">
+                      <div class="mobile-mnu hidden-md hidden-lg"><a class="toggle-mnu hidden-lg" href="#"><span></span></a></div>
+                              <ul class="sf-menu">
+                                <li><a href="#">Главная</a></li>
+                                <li><a class="active" href="#">Подбор туров</a>
+                                  <div class="sf-mega">
+                                    <ul class="mega-sub">
+                                      <li><a href="#">menuSubItem1</a></li>
+                                      <li><a href="#">menuSubItem2</a></li>
+                                      <li><a href="#">menuSubItem3</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li><a href="#">Статьи</a>
+                                  <div class="sf-mega">
+                                    <ul class="mega-sub">
+                                      <li><a href="#">menuSubItem1</a></li>
+                                      <li><a href="#">menuSubItem2</a></li>
+                                      <li><a href="#">menuSubItem3</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li><a href="#">Статья</a></li>
+                                <li><a href="#">Карта тура</a></li>
+                              </ul>
+                    </nav>
+                  </div>
+                  <div class="header-logo clearfix"><a href="./"><img src="images/big-logo.png" alt="Tural"></a>
+                    <h1>Выбери свой отпуск</h1>
+                    <div class="formbtn hidden-sm hidden-md hidden-lg" id="formbtn"><a href="#">Форма заказа</a></div>
+                  </div>
+                  <div class="choosevocation clearfix" id="dragform">
+                    <div class="closeform hidden-sm hidden-md hidden-lg"></div>
+                    <form>
+                      <div class="col-xs-12 col-sm-12 col-md-5">
+                        <div class="fist">
+                          <div class="form-group">
+                            <label class="curort" for="resort">Курорт</label>
+                            <input type="text" id="resort" name="name">
+                          </div>
+                          <div class="form-group">
+                            <label class="hotel" for="cat">Категория</label>
+                            <input type="text" id="cat" name="name">
+                          </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-5 col-sm-pull-3 col-md-6 col-md-pull-3">
-                        <div class="top-kurs">
-                          <p>Курс валют: 22.11.17$ = 27.02 грн € = 31.66 грн  Р = 0.46 грн</p>
+                      <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="form-group">
+                          <label class="checkin" for="checkin">Заезд</label>
+                          <input type="text" id="checkin" name="name" size="12">
                         </div>
-                        <div class="top-logo"><a href="index.html"><img src="images/top-logo.png" alt="Tural"></a></div>
+                        <div class="form-group">
+                          <label class="small" for="nights">Ночи</label>
+                          <input type="text" id="nights" name="name" size="3">
+                        </div>
+                        <div class="form-group">
+                          <label class="departure" for="departure">Выезд</label>
+                          <input type="text" id="departure" name="name" size="12">
+                        </div>
                       </div>
-                    </div>
-                    <div class="menu-wrap clearfix">
-                      <nav class="clearfix">
-                        <div class="mobile-mnu hidden-md hidden-lg"><a class="toggle-mnu hidden-lg" href="#"><span></span></a></div>
-                                <ul class="sf-menu">
-                                  <li><a href="#">Главная</a></li>
-                                  <li><a class="active" href="#">Подбор туров</a>
-                                    <div class="sf-mega">
-                                      <ul class="mega-sub">
-                                        <li><a href="#">menuSubItem1</a></li>
-                                        <li><a href="#">menuSubItem2</a></li>
-                                        <li><a href="#">menuSubItem3</a></li>
-                                      </ul>
-                                    </div>
-                                  </li>
-                                  <li><a href="#">Агенствам</a>
-                                    <div class="sf-mega">
-                                      <ul class="mega-sub">
-                                        <li><a href="#">menuSubItem1</a></li>
-                                        <li><a href="#">menuSubItem2</a></li>
-                                        <li><a href="#">menuSubItem3</a></li>
-                                      </ul>
-                                    </div>
-                                  </li>
-                                  <li><a href="#">Не нашли, что искали</a></li>
-                                  <li><a href="#">Контакти</a></li>
-                                </ul>
-                      </nav>
-                    </div>
-                    <div class="header-logo clearfix"><a href="./"><img src="images/big-logo.png" alt="Tural"></a>
-                      <h1>Выбери свой отпуск</h1>
-                      <p class="formbtn hidden-sm hidden-md hidden-lg" id="formbtn"><a href="#">Форма заказа</a></p>
-                    </div>
-                    <div class="choosevocation clearfix">
-                      <div class="close hidden-md hidden-lg"></div>
-                      <form>
-                        <div class="col-xs-12 col-sm-12 col-md-5">
-                          <div class="fist">
-                            <div class="form-group">
-                              <label class="curort" for="resort">Курорт</label>
-                              <input type="text" id="resort" name="name">
-                            </div>
-                            <div class="form-group">
-                              <label class="hotel" for="cat">Категория</label>
-                              <input type="text" id="cat" name="name">
-                            </div>
-                          </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group">
+                          <label class="small" for="adults">Взрослые</label>
+                          <input type="text" id="adults" name="name" size="3">
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                          <div class="form-group">
-                            <label class="checkin" for="checkin">Заезд</label>
-                            <input type="text" id="checkin" name="name" size="12">
-                          </div>
-                          <div class="form-group">
-                            <label class="small" for="nights">Ночи</label>
-                            <input type="text" id="nights" name="name" size="3">
-                          </div>
-                          <div class="form-group">
-                            <label class="departure" for="departure">Выезд</label>
-                            <input type="text" id="departure" name="name" size="12">
-                          </div>
+                        <div class="form-group">
+                          <label class="small" for="child">Дети</label>
+                          <input type="text" id="child" name="child" size="3">
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                          <div class="form-group">
-                            <label class="small" for="adults">Взрослые</label>
-                            <input type="text" id="adults" name="name" size="3">
-                          </div>
-                          <div class="form-group">
-                            <label class="small" for="child">Дети</label>
-                            <input type="text" id="child" name="child" size="3">
-                          </div>
-                          <input type="image" name="tourSearch" src="images/search-icon.png" value="find">
-                        </div>
-                      </form>
-                    </div>
+                        <input type="image" name="tourSearch" src="images/search-icon.png" value="find">
+                      </div>
+                    </form>
                   </div>
                   <div class="clearfix" id="passport"><a href="#"><span>Заказать</span><span>загран</span><span>паспорт</span></a></div>
                 </div>
@@ -161,311 +164,309 @@
           </div>
         </div>
       </header>
-      <div class="content">
+      <div class="content clearfix">
         <section class="proposeSlider clearfix">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">
-                <div class="proposeSliderTabs clearfix">
-                  <div class="tabs clearfix"><span class="tab active"><a href="#tab1">Предложение дня</a></span><span class="tab"><a href="#tab2">Новые поступления</a></span><span class="tab"><a href="#tab3">Лидеры продаж</a></span></div>
-                  <div class="tab_content clearfix">
-                    <div class="tab_item clearfix">
-                      <div class="owl-carousel" id="owl-propose">
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+              <div class="proposeSliderTabs clearfix">
+                <div class="tabs clearfix"><span class="tab active"><a href="#tab1">Предложение дня</a></span><span class="tab"><a href="#tab2">Новые поступления</a></span><span class="tab"><a href="#tab3">Лидеры продаж</a></span></div>
+                <div class="tab_content clearfix">
+                  <div class="tab_item clearfix">
+                    <div class="owl-carousel" id="owl-propose">
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose3.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose3.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose3.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose3.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
-                          </div>
+                        </div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
                         </div>
                       </div>
                     </div>
-                    <div class="tab_item">
-                      <div class="owl-carousel" id="owl-propose2">
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                  </div>
+                  <div class="tab_item">
+                    <div class="owl-carousel" id="owl-propose2">
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose3.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose3.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose3.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose3.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
-                          </div>
+                        </div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
                         </div>
                       </div>
                     </div>
-                    <div class="tab_item">
-                      <div class="owl-carousel" id="owl-propose3">
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                  </div>
+                  <div class="tab_item">
+                    <div class="owl-carousel" id="owl-propose3">
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose3.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose3.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose3.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose3.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose1.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
-                          </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose1.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="imgHold"><img src="images/propose2.jpg">
-                            <div class="capt">
-                              <p>Турция, Анталия</p>
-                              <p class="capt-price">500$</p>
-                            </div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="imgHold"><img src="images/propose2.jpg">
+                          <div class="capt">
+                            <p>Турция, Анталия</p>
+                            <p class="capt-price">500$</p>
                           </div>
-                          <div class="decr-item">
-                            <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
-                            <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
-                          </div>
+                        </div>
+                        <div class="decr-item">
+                          <p>21.12.2017 из Киева, на 7 ночей, питание ВВ, за человека</p>
+                          <div class="descr-link clearfix"><a href="#">Детали тура</a><a href="#">Заказать</a></div>
                         </div>
                       </div>
                     </div>
@@ -481,128 +482,125 @@
               <div class="col-md-12">
                 <h3>Наши тури</h3>
               </div>
-              <div class="col-md-12">
-                <div class="cat-container clearfix">
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Круизы</p>
-                    </div>
-                    <p>Круизы</p><img src="images/cruise1.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Детские международные фестивали</p><img src="images/cruise2.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Детские лагеря и Молодежные центры</p><img src="images/cruise3.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Авиа билеты</p><img src="images/cruise9.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Недвижимость в Болгарии</p><img src="images/cruise2.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Детские экскурсионные туры</p><img src="images/cruise4.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Туры по Украине</p><img src="images/cruise5.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Трудоустройство и стажировка в Болгарии</p><img src="images/cruise8.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Автобусы в Болгарию</p><img src="images/cruise6.jpg">
-                  </div>
-                  <div class="cat-pict">
-                    <div class="descr">
-                      <p>Детские международные фестивали</p>
-                    </div>
-                    <p>Автобусные экскурсионные туры</p><img src="images/cruise7.jpg">
-                  </div>
-                  <div class="clear"></div>
-                </div>
-              </div>
             </div>
           </div>
+          <div class="container cat-container clearfix">
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Круизы</p>
+              </div>
+              <p>Круизы</p><img src="images/cruise1.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Детские международные фестивали</p><img src="images/cruise2.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Детские лагеря и Молодежные центры</p><img src="images/cruise3.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Авиа билеты</p><img src="images/cruise9.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Недвижимость в Болгарии</p><img src="images/cruise2.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Детские экскурсионные туры</p><img src="images/cruise4.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Туры по Украине</p><img src="images/cruise5.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Трудоустройство и стажировка в Болгарии</p><img src="images/cruise8.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Автобусы в Болгарию</p><img src="images/cruise6.jpg">
+            </div>
+            <div class="cat-pict">
+              <div class="descr">
+                <p>Детские международные фестивали</p>
+              </div>
+              <p>Автобусные экскурсионные туры</p><img src="images/cruise7.jpg">
+            </div>
+            <div class="clear"></div>
+          </div>
         </section>
-        <section class="mainNews clearfix">
+        <section class="mainNews clearfix" data-parallax="scroll" data-image-src="images/mainsrticle-bg.jpg">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">
-                <div class="mainNewsTabs clearfix">
-                  <div class="tabs clearfix"><span class="tab active"><a href="#tab-1">Статьи</a></span><span class="tab"><a href="#tab-2">Новости</a></span></div>
-                  <div style="border: 1px solid #fff; width: 70%; margin: 20px auto;"></div>
-                  <div class="tab_content clearfix">
-                    <div class="tab-item clearfix">
-                      <div class="owl-carousel" id="mainArt">
-                        <div class="item"><img src="images/mainsrticle1.jpg">
-                          <div class="short-text clearfix">
-                            <p class="title">Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
-                          </div>
-                        </div>
-                        <div class="item"><img src="images/mainsrticle2.jpg">
-                          <div class="short-text clearfix">
-                            <p class="title">Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
-                          </div>
-                        </div>
-                        <div class="item"><img src="images/mainsrticle3.jpg">
-                          <div class="short-text clearfix">
-                            <p class="title">Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
-                          </div>
+              <div class="mainNewsTabs clearfix">
+                <div class="tabs clearfix"><span class="tab active"><a href="#tab-1">Статьи</a></span><span class="tab"><a href="#tab-2">Новости</a></span></div>
+                <div class="tab_content clearfix">
+                  <div class="tab-item clearfix">
+                    <div class="owl-carousel" id="mainArt">
+                      <div class="item">
+                        <div class="item-img clearfix"><img src="images/mainsrticle1.jpg"></div>
+                        <div class="short-text clearfix">
+                          <p class="title">Lorem ipsum dolor sit amet</p>
+                          <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="tab-item clearfix">
-                      <div class="owl-carousel" id="mainNews1">
-                        <div class="item"><img src="images/mainsrticle1.jpg">
-                          <div class="short-text clearfix">
-                            <p class="title">Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
-                          </div>
+                      <div class="item">
+                        <div class="item-img clearfix"><img src="images/mainsrticle2.jpg"></div>
+                        <div class="short-text clearfix">
+                          <p class="title">Lorem ipsum dolor sit amet</p>
+                          <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
                         </div>
-                        <div class="item"><img src="images/mainsrticle2.jpg">
-                          <div class="short-text clearfix">
-                            <p class="title">Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
-                          </div>
-                        </div>
-                        <div class="item"><img src="images/mainsrticle3.jpg">
-                          <div class="short-text clearfix">
-                            <p class="title">Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
-                          </div>
+                      </div>
+                      <div class="item">
+                        <div class="item-img clearfix"></div><img src="images/mainsrticle3.jpg">
+                        <div class="short-text clearfix">
+                          <p class="title">Lorem ipsum dolor sit amet</p>
+                          <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div style="border: 1px solid #fff; width: 70%; margin: 30px auto;"></div>
+                  <div class="tab-item clearfix">
+                    <div class="owl-carousel" id="mainNews1">
+                      <div class="item"><img src="images/mainsrticle1.jpg">
+                        <div class="short-text clearfix">
+                          <p class="title">Lorem ipsum dolor sit amet</p>
+                          <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
+                        </div>
+                      </div>
+                      <div class="item"><img src="images/mainsrticle2.jpg">
+                        <div class="short-text clearfix">
+                          <p class="title">Lorem ipsum dolor sit amet</p>
+                          <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
+                        </div>
+                      </div>
+                      <div class="item"><img src="images/mainsrticle3.jpg">
+                        <div class="short-text clearfix">
+                          <p class="title">Lorem ipsum dolor sit amet</p>
+                          <p>Lorem ipsum dolor sit amet, eu falli vidisse qui, sint equidem accommodare eu vis, cibo inermis ex vim.</p><a href="#">Читать далее</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -611,26 +609,24 @@
         <section class="testimonials clearfix">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">
-                <div class="testimonials-block clearfix">
-                  <h3>Отзывы о нас</h3>
-                  <div class="owl-carousel" id="response">
-                    <div class="item">
-                      <p class="resp-title"> Алиса, Кировоград</p><img src="images/mainresp1.jpg">
-                      <p>Агенство супер!!! Отдыхали в Болгарии большой компанией. Оформили все быстро и качественно!!! Рекомендую всем! Отдельное спасибо Наталье!</p>
-                    </div>
-                    <div class="item">
-                      <p class="resp-title"> Антон, Киев</p><img src="images/mainresp2.jpg">
-                      <p>Агенство супер!!! Отдыхали в Болгарии большой компанией. Оформили все быстро и качественно!!! Рекомендую всем! Отдельное спасибо Наталье!</p>
-                    </div>
-                    <div class="item">
-                      <p class="resp-title"> Алиса, Кировоград</p><img src="images/mainresp2.jpg">
-                      <p>Агенство супер!!! Отдыхали в Болгарии большой компанией. Оформили все быстро и качественно!!! Рекомендую всем! Отдельное спасибо Наталье!</p>
-                    </div>
-                    <div class="item">
-                      <p class="resp-title"> Антон, Киев</p><img src="images/mainresp1.jpg">
-                      <p>Агенство супер!!! Отдыхали в Болгарии большой компанией. Оформили все быстро и качественно!!! Рекомендую всем! Отдельное спасибо Наталье!</p>
-                    </div>
+              <div class="testimonials-block clearfix">
+                <h3>Отзывы о нас</h3>
+                <div class="owl-carousel" id="response">
+                  <div class="item">
+                    <p class="resp-title"> Алиса, Кировоград</p><img src="images/mainresp1.jpg">
+                    <p>Агенство супер!!! Отдыхали в Болгарии большой компанией. Оформили все быстро и качественно!!! Рекомендую всем! Отдельное спасибо Наталье!</p>
+                  </div>
+                  <div class="item">
+                    <p class="resp-title"> Антон, Киев</p><img src="images/mainresp2.jpg">
+                    <p>Агенство супер!!! Отдыхали в Болгарии большой компанией. Оформили все быстро и качественно!!! Рекомендую всем! Отдельное спасибо Наталье!</p>
+                  </div>
+                  <div class="item">
+                    <p class="resp-title"> Алиса, Кировоград</p><img src="images/mainresp2.jpg">
+                    <p>Агенство супер!!! Отдыхали в Болгарии большой компанией. Оформили все быстро и качественно!!! Рекомендую всем! Отдельное спасибо Наталье!</p>
+                  </div>
+                  <div class="item">
+                    <p class="resp-title"> Антон, Киев</p><img src="images/mainresp1.jpg">
+                    <p>Агенство супер!!! Отдыхали в Болгарии большой компанией. Оформили все быстро и качественно!!! Рекомендую всем! Отдельное спасибо Наталье!</p>
                   </div>
                 </div>
               </div>
@@ -736,16 +732,19 @@
       <div id="btn-connect">кнопка связи</div>
       <div id="top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
     </footer>
-    <!--script(src="libs/jquery/jquery-3.2.1.min.js")-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--script(src="libs/jquery/datepicker-ru.js")-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.5/jquery.jcarousel.min.js"></script>
+    <script src="libs/parallax/parallax.min.js"></script>
+    <script src="libs/parallax/wow.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

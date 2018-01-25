@@ -11,22 +11,29 @@ block content
                     #cardTabs.clearfix
                         .tabs.clearfix
                             .spantabs.clearfix
-                                span.tab.active
-                                    a(href="#") Описание
-                                span.tab
-                                    a(href="#") Правила
-                                span.tab
-                                    a(href="#") Видео
-                                span.tab
-                                    a(href="#") Фото
-                                span.tab
-                                    a(href="#") Менеджеры
-                                span.tab
-                                    a(href="#") Отзывы
-                                span.tab
-                                    a(href="#") Похожие туры
-                                span.tab
-                                    a(href="#") Заказать
+                                .hidespan.clearfix.hidden-sm.hidden-md.hidden-lg
+                                    .sandBtm.hidden-sm.hidden-md.hidden-lg
+                                        #sandwich
+                                            .sw-topper
+                                            .sw-bottom
+                                            .sw-footer
+                                .openspan.clearfix
+                                    span.tab.active
+                                        a(href="#") Описание
+                                    span.tab
+                                        a(href="#") Правила
+                                    span.tab
+                                        a(href="#") Видео
+                                    span.tab
+                                        a(href="#") Фото
+                                    span.tab
+                                        a(href="#") Менеджеры
+                                    span.tab
+                                        a(href="#") Отзывы
+                                    span.tab
+                                        a(href="#") Похожие туры
+                                    span.tab
+                                        a(href="#") Заказать
                         .tab_content.clearfix
                             .tab-item.clearfix
                                 .topinfo.clearfix
@@ -40,7 +47,7 @@ block content
                                                .item-info
                                                    .infoCal
                                                         input(type="text" id="datepicker")
-                                                        i(class="fa fa-angle-down" aria-hidden="true")
+                                                        i(class="fa fa-angle-down"  id="dateArr" aria-hidden="true")
                                            .info-items.clearfix
                                                .info-name
                                                     | Длительность (дней)
@@ -97,18 +104,18 @@ block content
 
                             .tab-item.clearfix
                                 | item
-                            //.tab-item.clearfix
-                            //    | item
-                            //.tab-item.clearfix
-                            //    | photo
-                            //.tab-item.clearfix
-                            //    | item
-                            //.tab-item.clearfix
-                            //    | item
-                            //.tab-item.clearfix
-                            //    | item
-                            //.tab-item.clearfix
-                            //    | item
+                            .tab-item.clearfix
+                                | item
+                            .tab-item.clearfix
+                                | photo
+                            .tab-item.clearfix
+                                | item
+                            .tab-item.clearfix
+                                | item
+                            .tab-item.clearfix
+                                | item
+                            .tab-item.clearfix
+                                | item
 
                     .tourdescription.clearfix
                         p.desctitle

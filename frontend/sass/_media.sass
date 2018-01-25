@@ -1,32 +1,44 @@
 /*==========  Desktop First Method  ==========*/
-@media only screen and (max-width: 1920px)
-  .carousel-control.left
-    left: -4%
-    top:  40%
-    background: url("images/topSliderarr.png") 123px 0 no-repeat
-@media only screen and (max-width: 1920px)
-  .carousel-control.left
-    background: url("images/topSliderarr.png") 130px 0 no-repeat
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1920px)
+
+  #topSlider
+    overflow: hidden
+    max-height: 100%
+    height: 470px
+  .choosevocation
+    margin: 50px auto
+  #passport
+    bottom: -50px
+@media only screen and (max-width: 1366px)
+  #topSlider
+    overflow: hidden
+    max-height: 100%
+    height: 400px
+  .choosevocation
+    margin: 10px auto
+  #passport
+    bottom: -80px
 @media only screen and (max-width: 1200px)
+
   .sf-menu a
   //padding: .75em .8em
   .top-header .top-tel
     margin-left: 30px
   .choosevocation
     width: 100%
+    margin: 0 auto
   .choosevocation .form-group
     margin-right: 4px
 @media only screen and (max-width: 1024px)
   #topSlider
     height: 470px
-  .carousel-control.left
-    background: url("images/topSliderarr.png") 87px 0 no-repeat !important
+  .choosevocation
+    width: 100%
+    margin: 50px auto
   #topSlider .full-screen
     background-size: cover
     -webkit-background-size: cover
-  .choosevocation
-    margin: 50px auto
   #passport
     bottom: -40px
   .proposeSlider .proposeSliderTabs .tabs
@@ -56,7 +68,7 @@
       grid-column: 1/3 !important
     &:nth-child(10)
       //width: 100%
-      grid-column: 1/4 !important
+      grid-column: 4/2 !important
   #cardTabs .tabs .tab
     padding: 13px 18px !important
   #cardTabs .tab-item .info-items .item-info,
@@ -66,8 +78,12 @@
     top: 101px
   #dopinfo .leftSide span.left-tab
     font-size: 16px
+  #btn-connect
+    top: 5%
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
+  .top-header
+    width: 100%
   #topSlider
     overflow: hidden
 
@@ -80,8 +96,6 @@
     img
       float: none
       width: auto
-  .carousel-control.left
-    background: url("images/topSliderarr.png") 79px 0 no-repeat !important
   nav
     background: none
     float: left
@@ -107,7 +121,7 @@
     top: -8%
     right: 5%
   aside .prod_slider #block_arrows .next
-    bottom: 100%
+    top: -8%
     right: 0
   .subfooter
     .fooClass
@@ -148,6 +162,12 @@
       float: left
       margin-right: 15px
 @media only screen and (max-width: 768px)
+  .header-content,
+  .cat-container,
+  .mainNewsTabs,
+  .proposeSliderTabs,
+  .testimonials-block
+    padding: 0 15px !important
   .top-header
     font-size: 22px
     .top-tel
@@ -164,21 +184,19 @@
   .choosevocation
     display: none
     position: fixed
-    top: 50%
+    top: 35%
     left: 10%
-    z-index: 5
+    z-index: 30
     width: 80%
     background-color: rgba(0, 0, 0, 0.8)
     .form-group
       width: 32%
-  .carousel-control.left,
-  .carousel-control.right
+  .topSliderControl
     top: 55%
-  .carousel-control.left
-    background: url("images/topSliderarr.png") 35px 0 no-repeat !important
-
   .mainNews .mainNewsTabs .tab-item .item .short-text
     font-size: 13px
+    a
+      top: 93%
   #cardTabs .tab-item .infoblock .priceblock
     position: initial
     width: 60%
@@ -186,11 +204,29 @@
   #cardTabs .tabs .tab.active a,
   #cardTabs .tabs .tab:hover a
     font-size: 12px
+  #cardTabs .tabs .tab
+    float: none
+    text-align: left
+    border-bottom: 1px solid #ccc
+    &.active,
+    &:hover
+      &:after
+        content: ''
+        position: absolute
+        border: 8px solid transparent
+        border-left: 10px solid $activ_col !important
+        left: 0
+        margin-left: -8px
+        top: 35%
+        width: 0
+  #cardTabs .tabs .spantabs .openspan
+    display: none
+    padding: 0 25px
   .footer-social,
   .footer-copy
     text-align: center
   #btn-connect
-    left: 80%
+    left: 75%
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 667px)
   .proposeSlider .proposeSliderTabs .tabs
@@ -221,36 +257,20 @@
   .choosevocation .fist
     .form-group
       width: 100%
-  .carousel-control.left,
-  .carousel-control.right
-    top: 65%
-  .carousel-control.left
-    background: url("images/topSliderarr.png") -80% 0 no-repeat !important
   .mainNews .mainNewsTabs .tab-item .item .short-text a
     top: 93%
-  #cardTabs .tabs .tab
-    float: none
-    text-align: left
-    &.active,
-    &:hover
-       &:after
-          content: ''
-          position: absolute
-          border: 8px solid transparent
-          border-left: 10px solid $activ_col !important
-          left: 0
-          margin-left: -8px
-          top: 35%
-          width: 0
 
+  .subfooter .sub-form
+    margin: 40% auto
+    width: 60%
+  #button-more
+    width: 40%
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px)
   .proposeSlider .proposeSliderTabs .tab_item .item .decr-item p
     padding: 23px 0 20px 15px
   .mainNews .mainNewsTabs .tab-item .item .short-text
     width: 80%
-  .carousel-control.left
-    background: url("images/topSliderarr.png") -50% 0 no-repeat !important
   #dopinfo .leftSide,
   #dopinfo .rightSide
     width: 100%
@@ -265,7 +285,11 @@
     margin: 40px auto
 @media only screen and (max-width: 480px)
   #topSlider
-    height: 500px
+    height: 480px
+  .header-logo
+    width: 60%
+  .header-logo h1
+    font-size: 22px
   .ourTours .cat-container
     grid-template-columns: repeat(2, 1fr)
   .ourTours  .cat-pict img
@@ -287,6 +311,8 @@
     margin: 20px 0
   .choosevocation
     width: 65%
+    top: 2%
+    left: 15%
     .form-group
       float: none
       width: 100%
@@ -294,25 +320,19 @@
         padding: 5px 20px 0 0
   #passport
     bottom: -2%
-  .carousel-control.left,
-  .carousel-control.right
-    top: 60%
-  .carousel-control.left
-    background: url("images/topSliderarr.png") -4% 0 no-repeat !important
-    left: 2%
-  .carousel-control.right
-    right: 2%
   .mainNews .mainNewsTabs .tab-item .item .short-text
     width: 70%
   .mainNews .mainNewsTabs .tab-item .item .short-text a
     top: 91%
-
+  #button-more
+    width: 60%
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 380px)
   .top-header
     font-size: 18px
     .top-tel
       margin-left: 20px
+
   .proposeSlider .proposeSliderTabs .owl-nav div
     top: 25% !important
   .proposeSlider .proposeSliderTabs .tab_item .item .decr-item p
@@ -326,20 +346,25 @@
   .ourTours  .cat-pict img
     width: 100%
     height: auto
-  .carousel-control
-    width: 18%!important
-  .carousel-control.left
-    background: url("images/topSliderarr.png") -1% 0 no-repeat !important
   .ourTours  .cat-pict
     &:nth-child(1)
       grid-column: 1/1 !important
     &:nth-child(10)
       grid-column: 1/1 !important
+  .ourTours .cat-container .cat-pict p, .jc-items .cat-pict p
+    font-size: 18px
+
+  .formbtn
+    width: 70%
+  .header-logo h1
+    font-size: 17px
+  #button-more
+    width: 70%
 @media only screen and (max-width: 320px)
-  .carousel-control
-    width: 21%!important
-    .carousel-control.left
-      background: url("images/topSliderarr.png") 0 0 no-repeat !important
+  #passport
+    bottom: -7%
+  .subfooter .sub-form
+    width: 100%
 
 
 /*==========  Mobile First Method  ==========*/

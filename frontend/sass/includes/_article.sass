@@ -41,6 +41,7 @@ aside
       text-align: center
       margin: 10px 0
       @include font('informCTT')
+      font-size: 16px
     img
       margin: 15px 0
   .owl-dots
@@ -135,6 +136,7 @@ aside
   h2
     text-align: center
     text-transform: uppercase
+    margin: 25px 0
   .art-item
     display: none
     margin: 10px 0 30px 0
@@ -193,12 +195,87 @@ aside
       transform: translateY(0)
 #button-more
   cursor: pointer
-  width: 18%
+  width: 210px
+  height: 60px
   margin: 0 auto
   @include font("Opem Sans")
   font-size: 18px
-  img
-    float: left
+  background: url("images/glob.png") 0 0 no-repeat
+  position: relative
+  .arrL,
+  .arrR
+    position: absolute
+
+  .arrR
+    top: -6px
+    left: -2px
+    width: 60px
+    height: 68px
+    -webkit-animation: orbit2 4s linear infinite /* Chrome, Safari 5 */
+    -moz-animation: orbit2 4s linear infinite /* Firefox 5-15 */
+    -o-animation: orbit2 4s linear infinite /* Opera 12+ */
+    animation: orbit2 4s linear infinite /* Chrome, Firefox 16+, IE 10+, Safari 5 */
+
+    @-webkit-keyframes orbit2
+      from
+        transform: rotate(0deg) translateX(0) rotate(-360deg)
+      to
+        transform: rotate(360deg) translateX(0) rotate(0deg)
+
+
+    @-moz-keyframes orbit2
+      from
+        transform: rotate(0deg) translateX(0) rotate(-360deg)
+      to
+        transform: rotate(360deg) translateX(0) rotate(0deg)
+
+
+    @-o-keyframes orbit2
+      from
+        transform: rotate(0deg) translateX(0) rotate(-360deg)
+      to
+        transform: rotate(360deg) translateX(0) rotate(0deg)
+
+    @keyframes orbit2
+      from
+        transform: rotate(0deg) translateX(0) rotate(-360deg)
+      to
+        transform: rotate(360deg) translateX(0) rotate(0deg)
+  .arrL
+    bottom: 27px
+    left: 0
+    height: 3px
+    width: 56px
+    -webkit-animation: orbit2 4s linear infinite /* Chrome, Safari 5 */
+    -moz-animation: orbit2 4s linear infinite /* Firefox 5-15 */
+    -o-animation: orbit2 4s linear infinite /* Opera 12+ */
+    animation: orbit2 4s linear infinite /* Chrome, Firefox 16+, IE 10+, Safari 5 */
+
+    @-webkit-keyframes orbit2
+      from
+        transform: rotate(-360deg) translateY(0) rotate(0deg)
+      to
+        transform: rotate(-360deg) translateY(0) rotate(360deg)
+
+
+    @-moz-keyframes orbit2
+      from
+        transform: rotate(-360deg) translateY(0) rotate(0deg)
+      to
+        transform: rotate(-360deg) translateY(0) rotate(360deg)
+
+
+    @-o-keyframes orbit2
+      from
+        transform: rotate(-360deg) translateY(0) rotate(0deg)
+      to
+        transform: rotate(-360deg) translateY(0) rotate(360deg)
+
+    @keyframes orbit2
+      from
+        transform: rotate(-360deg) translate(0) rotate(0deg)
+      to
+        transform: rotate(-360deg) translate(0) rotate(360deg)
   p
     padding: 20px 0 0 0
     float: right
@@ -211,6 +288,81 @@ aside
     .spantabs
       width: 92%
       margin: 0 auto
+      .hidespan
+        height: 35px
+        -webkit-box-shadow: 0 15px 8px -17px rgba(0, 0, 0, 0.5)
+        -moz-box-shadow: 0 15px 8px -17px rgba(0, 0, 0, 0.5)
+        box-shadow: 0 15px 8px -17px rgba(0, 0, 0, 0.5)
+        .sandBtm
+          position: relative
+          height: 35px
+          width: 40px
+          float: right
+          margin-right: 10px
+
+        $w: 27px
+        $h: 2px
+        #sandwich
+          width: $w
+          height: 15px
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          margin: auto
+        .sw-topper
+          position: relative
+          top: 0
+          width: $w
+          height: $h
+          background: $activ_col
+          border: none
+          border-radius: 4px 4px 4px 4px
+          transition: transform 0.5s, top 0.2s
+        .sw-bottom
+          position: relative
+          width: $w
+          height: $h
+          top: $h * 2
+          background: $activ_col
+          border: none
+          border-radius: 4px 4px 4px 4px
+          transition: transform 0.5s, top 0.2s
+          transition-delay: 0.2s, 0s
+        .sw-footer
+          position: relative
+          width: $w
+          height: $h
+          top: $h * 4
+          background: $activ_col
+          border: none
+          border-radius: 4px 4px 4px 4px
+          transition: all 0.5s
+          transition-delay: 0.1s
+        #sandwich.active
+          .sw-topper
+            top: 10px
+            -webkit-transform: rotate(140deg)
+            -moz-transform: rotate(140deg)
+            -ms-transform: rotate(140deg)
+            -o-transform: rotate(140deg)
+            transform: rotate(140deg)
+          .sw-bottom
+            top: 5px
+            -webkit-transform: rotate(-140deg)
+            -moz-transform: rotate(-140deg)
+            -ms-transform: rotate(-140deg)
+            -o-transform: rotate(-140deg)
+            transform: rotate(-140deg)
+          .sw-footer
+            opacity: 0
+            top: 0
+            -webkit-transform: rotate(180deg)
+            -moz-transform: rotate(180deg)
+            -ms-transform: rotate(180deg)
+            -o-transform: rotate(180deg)
+            transform: rotate(180deg)
     .tab
       display: block
       float: left
@@ -270,13 +422,18 @@ aside
           border: 1px solid #9a9a9a
           border-radius: 7px
           width: 100%
+          position: relative
           .fa
             color: $activ_col
+            position: absolute
+            top: 20%
+            right: 7%
+            cursor: pointer
           input[type="text"]
             width: 90%
             border: none
             background: $cardtabs_col
-            padding: 2px 0
+            padding: 2px 4px
             margin: 0 0 0 3px
       img
         float: left
@@ -351,6 +508,25 @@ aside
       display: block
 #cardslider
   margin: 30px 0
+  .item
+    &:hover
+      border-bottom: 2px solid $activ_col
+    img
+      position: relative
+      -webkit-transition: all 200ms ease-in
+      -webkit-transform: scale(1)
+      -ms-transition: all 200ms ease-in
+      -ms-transform: scale(1)
+      -moz-transition: all 200ms ease-in
+      -moz-transform: scale(1)
+      transition: all 200ms ease-in
+      transform: scale(1)
+      z-index: 1
+      &:hover
+        z-index: 2
+        -webkit-transform: scale(0.9)
+        -ms-transform: scale(0.9)
+        transform: scale(0.9)
   .owl-nav
     div
       width: 25px

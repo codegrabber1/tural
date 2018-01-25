@@ -16,6 +16,7 @@ html(lang="ru-RU")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/megafish.min.css" rel="stylesheet")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.css" rel="stylesheet")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet")
         link(href="style.css" rel="stylesheet")
         <!-- [if lt IE 9]>
             script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js")
@@ -27,7 +28,7 @@ html(lang="ru-RU")
         .wrrap
             header
                 include ../modules/_header
-            .content
+            .content.clearfix
                 block content
         footer
             include ../modules/_footer
@@ -35,15 +36,18 @@ html(lang="ru-RU")
                | кнопка связи
             #top
                 i(class="fa fa-angle-up" aria-hidden="true")
-        //script(src="libs/jquery/jquery-3.2.1.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        //script(src="libs/jquery/datepicker-ru.js")
         script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.5/jquery.jcarousel.min.js")
+        script(src="libs/parallax/parallax.min.js")
+        script(src="libs/parallax/wow.min.js")
 
         script(src="js/custom.js")

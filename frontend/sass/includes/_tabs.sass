@@ -130,7 +130,7 @@
       position: relative
       padding: 20px 0
       a
-        color: $font_col
+        color: $contentbg_col
         font-weight: bold
         text-transform: uppercase
         text-decoration: none
@@ -149,6 +149,8 @@
             margin-left: -12px
             top: 0
             width: 0
+  .tab_content
+    margin: 20px 0
   .tab-item
     overflow: hidden
     display: none
@@ -156,6 +158,28 @@
     &:first-child
       display: block
     .item
+      overflow: hidden
+      img
+        position: relative
+        -webkit-transition: all 200ms ease-in
+        -webkit-transform: scale(1)
+        -ms-transition: all 200ms ease-in
+        -ms-transform: scale(1)
+        -moz-transition: all 200ms ease-in
+        -moz-transform: scale(1)
+        transition: all 200ms ease-in
+        transform: scale(1)
+        z-index: 1
+        &:hover
+          z-index: 2
+          -webkit-transition: all 200ms ease-in
+          -webkit-transform: scale(1.1)
+          -ms-transition: all 200ms ease-in
+          -ms-transform: scale(1.1)
+          -moz-transition: all 200ms ease-in
+          -moz-transform: scale(1.1)
+          transition: all 200ms ease-in
+          transform: scale(1.1)
       .short-text
         @include font('Open Sans')
         font-size: 14px

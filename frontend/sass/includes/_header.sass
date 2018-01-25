@@ -2,6 +2,7 @@ header
   display: block
   .top-slider
     width: 100%
+    position: relative
 #topSlider
   overflow: hidden
   max-height: 100%
@@ -11,19 +12,24 @@ header
   -webkit-background-size: 100%
   background-position: top center
   background-repeat: no-repeat
-
-.carousel-control
+.topSliderControl
+  position: absolute
+  width: 100%
+  height: 68px
+  top: 50%
   z-index: 10
-  width: 15% !important
-  opacity: 1
-.carousel-control.left
-  left: -4%
-  top:  40%
-  background: url("images/topSliderarr.png") 130px 0 no-repeat
-.carousel-control.right
-  right: -4%
-  top:  40%
-  background: url("images/topSliderarr.png") -67px 0 no-repeat
+  a.left,
+  a.right
+    display: block
+    position: absolute
+    height: 68px
+    width: 67px
+  a.left
+    left: 3%
+    background: url("images/topSliderarr.png") 0 0 no-repeat
+  a.right
+    right: 3%
+    background: url("images/topSliderarr.png") -67px 0 no-repeat
 .topFoo
   position: absolute
   width: 100%
@@ -51,6 +57,9 @@ header
   font-weight: 700
   font-size: 22px
   line-height: 27px
+  width: 100%
+  margin: 0 auto
+  padding: 0 15px
   .call-form
     border: 0 solid red
     margin-top: -8px
@@ -78,6 +87,7 @@ header
     margin: 10px 0 0
     text-align: center
   .top-logo
+
     a
       display: block
       text-align: center
@@ -108,9 +118,8 @@ header
   background-color: rgba(0,0,0,.8)
   z-index: 150
   display: none
-.top-search,
-.choosevocation
-  .close
+.top-search .close,
+.choosevocation .closeform
     width: 38px
     height: 33px
     cursor: pointer
@@ -151,10 +160,12 @@ header
       img
         margin: 80px auto
 .header-logo
-  width: 90%
+  width: 50%
   margin: 0 auto
   text-align: center
   line-height: 30px
+  position: relative
+  z-index: 20
   img
     margin: 0 auto
   h1
@@ -167,7 +178,7 @@ header
 .choosevocation
   background-color:  rgba(0, 0, 0, 0.5)
   margin: 0 auto
-  width: 95%
+  width: 96%
   padding: 4px 0 0
   .form-group
     float: left
@@ -221,7 +232,7 @@ header
   background: url("images/passport.png") 0 0 no-repeat
   -webkit-background-size: 100%
   background-size: 100%
-  right: 0
+  right: 4%
   bottom: -90px
   width: 85px
   height: 85px
