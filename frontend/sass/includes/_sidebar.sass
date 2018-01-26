@@ -3,12 +3,65 @@ aside
     font-size: 22px
     color: $activ_col
   .sidebar_propose
+    .imgHold
+      position: relative
+      img
+        margin: 0 auto
+      .capt
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        p
+          color: #0f0f0f
+          float: left
+          font-size: 18px
+          margin: 2px 17px
+          line-height: 40px
+          &.capt-price
+            float: right
+            font-size: 24px
+            color: red
+            font-weight: bold
+    .decr-item
+      position: relative
+      overflow: hidden
+      p
+        padding: 0 0 0 15px
+      .descr-link
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        transform: translateY(30px)
+        -webkit-transition: all .25s
+        -o-transition: all .25s
+        transition: all .25s
+        background-color: $activ_col
+        a
+          margin: 20px
+          padding: 3px 8px
+          float: left
+          display: block
+          text-align: center
+          border: 1px solid #fff
+          border-radius: 3px
+          color: #fff
+          &:last-child
+            float: right
+          &:hover
+            text-decoration: none
+    .decr-item:hover .descr-link
+      opacity: 1
+      transform: translateY(0)
     .owl-nav
       div
         width: 20px
         height: 35px
         background-image: url("images/proposeArrows.png")
-        top: 40%
+        top: 20%
         position: absolute
         &.owl-next
           right: 0
@@ -31,8 +84,9 @@ aside
         z-index: 1
         .cat-pict
           overflow: visible
+          margin: 10px 0
         p
-          padding: 15px 0 0
+          padding: 10px 0 0
           line-height: 15px
         .descr
           p
@@ -41,13 +95,13 @@ aside
           max-width: 100%
           display: block
           height: auto
-          margin: 15px auto
+          margin: 5px auto
     #block_arrows
       width: 100%
-      z-index: 5
+      z-index: 10
       .prev
         position: absolute
-        top: -4%
+        top: -3%
         right: 2%
       .next
         position: absolute

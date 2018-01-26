@@ -327,8 +327,29 @@ jQuery(document).ready(function($){
         navText: "",
         nav: true,
         loop: true,
+        margin: 10,
         autoplay: true,
-        autoplayTimeout: 2000
+        autoplayTimeout: 2000,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items: 2,
+                nav: true,
+                autoplayTimeout: 2000
+            },
+
+            1000:{
+                items: 1,
+                nav: true,
+                autoplayTimeout: 2000
+
+            }
+        }
     });
 // Relatetd tours
     $("#reltours").owlCarousel({
@@ -365,10 +386,10 @@ jQuery(document).ready(function($){
     $("#relpostart").owlCarousel({
         items: 3,
         nav: true,
-        loop: true,
+        loop: false,
         margin: 20,
         navText: "",
-        autoplay: true,
+        autoplay: false,
         responsiveClass:true,
         responsive:{
             0:{
